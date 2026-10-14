@@ -11,7 +11,7 @@ Abra [index.html](index.html) diretamente no navegador ou acesse o site publicad
 - Escolha a data, use busca e filtros de tema e duração e marque as estrelas.
 - Ative **Toda a programação** para ampliar a lista. Essa visualização começa ordenada por horário e inclui filmes com informações básicas e link oficial.
 - **Minha lista do dia** reúne os favoritos das duas visualizações, inclusive os filmes fora da curadoria. Os downloads incluem todas essas escolhas do dia, independentemente dos filtros ativos.
-- Abra o menu **Exportar** para escolher **Baixar minha lista** (texto), **Exportar para calendário** ou **Salvar PDF**. Abra o arquivo `.ics` no aplicativo de calendário ou importe-o no serviço que utiliza. Cada evento inclui nome, local, link, início e término estimado pela duração; os horários correspondem a São Paulo.
+- No menu **Exportar**, o grupo **Dia selecionado** oferece **Baixar minha lista** (texto), **Exportar para calendário** e **Salvar PDF**. O grupo **Todos os dias** oferece **Baixar minha lista completa** (TXT organizado por data e horário) e **Exportar para calendário** (um único arquivo ICS com todos os favoritos). As exportações TXT e de calendário incluem as escolhas das duas visualizações, independentemente dos filtros ativos. Abra o arquivo `.ics` no aplicativo de calendário ou importe-o no serviço que utiliza. Cada evento inclui nome, local, link, início e término estimado pela duração; os horários correspondem a São Paulo.
 - Compartilhe uma data com `?dia=2026-10-24`; acrescente `&visao=todos` para abrir a programação completa. [Exemplo com os dois parâmetros](https://ecdyzone.github.io/mostra_cinema_sp_interativa/?dia=2026-10-24&visao=todos).
 
 Os favoritos ficam no navegador. As escolhas da primeira versão de 17/10 são migradas automaticamente quando o navegador e o endereço do site são os mesmos.
@@ -88,7 +88,7 @@ node scripts/verificar_site.cjs
 
 Os testes Python verificam extração, cache, preservação das grades, justificativas obrigatórias e proteção do HTML anterior quando faltam dados. A comparação com as páginas reais usa os HTMLs em `cache/programacao/`; sem cache, essa parte é marcada como não executada.
 
-A verificação Node.js exercita a lógica da interface e as exportações com um DOM simulado. Confere fuso, duração, virada de dia, identificadores estáveis e UTF-8 do calendário, além dos programas de Pelechian. Algumas verificações usam sessões conhecidas; revise-as se alterar o período ou essas seleções. Não substitui uma revisão visual no navegador.
+A verificação Node.js exercita a lógica da interface e as exportações diárias e completas com um DOM simulado. Confere inclusão dos favoritos dos 15 dias, ordem por data e horário, independência dos filtros, fuso, duração, virada de dia, identificadores estáveis e UTF-8 do calendário, além dos programas de Pelechian. Algumas verificações usam sessões conhecidas; revise-as se alterar o período ou essas seleções. Não substitui uma revisão visual no navegador.
 
 ## Publicação
 

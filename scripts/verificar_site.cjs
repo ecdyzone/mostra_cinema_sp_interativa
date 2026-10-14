@@ -12,13 +12,14 @@ class El{
  setAttribute(k,v){this.attrs[k]=v}addEventListener(k,fn){this.listeners[k]=fn}appendChild(el){this.children=this.children.filter(c=>c!==el);this.children.push(el)}replaceChildren(){this.children=[]}querySelector(){return this.button}click(){this.clicked=true}focus(){this.focused=true}remove(){}
 }
 function setup(storage={},search=''){
- const ids=['search','theme','sort','day','date-label','intro','scope','featured','favorites','export-menu','export-toggle','download','calendar','print','filmes','count','empty','status'];
+ const ids=['search','theme','sort','day','date-label','intro','scope','featured','favorites','export-menu','export-toggle','download','calendar','download-all','calendar-all','print','filmes','count','empty','status'];
+ for(const id of ids)assert.ok(html.includes('id="'+id+'"'), 'Elemento ausente: '+id);
  const els=Object.fromEntries(ids.map(id=>[id,new El()]));els.sort.value='curadoria';
  const cards=films.map(f=>{const c=new El();c.dataset.id=f.id;c.button=new El();c.button.dataset.favorite=f.id;return c});
  let exported;
  const context={document:{addEventListener(){},getElementById:id=>els[id],querySelectorAll:()=>cards,createElement:()=>new El(),body:new El()},localStorage:{getItem:key=>storage[key]??null,setItem:(key,value)=>storage[key]=value},Blob,TextEncoder,URL:Object.assign(URL,{createObjectURL:blob=>{exported=blob;return 'blob:test'},revokeObjectURL(){}}),URLSearchParams,setTimeout:fn=>fn(),window:{location:{search,href:'https://example.com/'+search},history:{replaceState(){}},print(){}}};
  vm.createContext(context);vm.runInContext(code,context);
- return {els,cards,storage,exported:()=>exported,calendarFor:selected=>context.buildCalendar(selected),visible:()=>cards.filter(c=>!c.hidden),changeDay(day){els.day.value=day;els.day.listeners.change()},choose(f){const button=cards.find(c=>c.dataset.id===f.id).button;els.filmes.listeners.click({target:{closest:()=>button}})}};
+ return {els,cards,storage,exported:()=>exported,filename:()=>context.document.body.children.at(-1)?.download,calendarFor:selected=>context.buildCalendar(selected),visible:()=>cards.filter(c=>!c.hidden),changeDay(day){els.day.value=day;els.day.listeners.change()},choose(f){const button=cards.find(c=>c.dataset.id===f.id).button;els.filmes.listeners.click({target:{closest:()=>button}})}};
 }
 (async()=>{
  const old=films.find(f=>f.date==='2026-10-17'&&f.legacyId===6);
@@ -141,5 +142,59 @@ function setup(storage={},search=''){
  assert.ok(specialText.includes('Memória 🎬 '.repeat(30)));
  assert.ok(special.split('\r\n').every(line=>Buffer.byteLength(line,'utf8')<=75));
  assert.equal(special.includes('\uFFFD'),false);
- console.log('Passou: 15 dias, curadoria padrão e programação completa, seleção por URL, filtros, ordenação e favoritos nas duas visões; TXT e calendário; fuso, duração, virada de dia, programas e UTF-8.');
+ // A lista completa inclui os 15 dias e ignora visualização, filtros e ordem de marcação.
+ const full=setup({'mostra-sabado-2026':'[6]'},'?dia=2026-10-24');
+ const selected=[...new Map([
+  ...allDays.map(day=>films.find(f=>f.date===day)),old,movie,program,
+  films.find(f=>f.date==='2026-10-29'&&!f.curated),
+  films.find(f=>f.date==='2026-10-23'&&f.title===movie.title)
+ ].map(f=>[f.id,f])).values()];
+ for(const f of [...selected].reverse())if(f.id!==old.id)full.choose(f);
+ const chronological=[...selected].sort((a,b)=>a.date.localeCompare(b.date)||a.time.localeCompare(b.time));
+ full.els.search.value='nenhum filme com este nome';full.els.search.listeners.input();
+ full.els.theme.value='Animação';full.els.theme.listeners.change();
+ full.els.featured.listeners.click();
+ assert.equal(full.visible().length,0);
+ full.els['export-menu'].open=true;full.els['download-all'].listeners.click();
+ assert.equal(full.els['export-menu'].open,false);assert.equal(full.els['export-toggle'].focused,true);
+ assert.equal(full.filename(),'minha-lista-mostra-todos-os-dias.txt');
+ assert.equal(full.exported().type,'text/plain;charset=utf-8');
+ const fullText=await full.exported().text();
+ assert.ok(fullText.startsWith('Minha lista completa na Mostra — Todos os dias\n'));
+ for(const day of allDays)assert.equal(fullText.split(day.split('-').reverse().join('/')).length-1,1);
+ let position=-1;
+ for(const f of chronological){
+  const next=fullText.indexOf(f.time+' — '+f.title+' ('+f.minutes+' min)\n'+f.venue+'\n'+f.director+'\n'+f.url+'\n',position+1);
+  assert.ok(next>position,'Sessão ausente ou fora de ordem: '+f.id);position=next;
+ }
+ assert.equal(fullText.split('\n').filter(line=>/^\d{2}:\d{2} — /.test(line)).length,selected.length);
+ for(const member of program.members)assert.ok(fullText.includes(member.title+' ('+member.minutes+' min) — '+member.url));
+ assert.ok(full.els.status.textContent.includes(selected.length+' opções'));
+ full.els['calendar-all'].listeners.click();
+ assert.equal(full.filename(),'mostra-calendario-todos-os-dias.ics');
+ assert.equal(full.exported().type,'text/calendar;charset=utf-8');
+ const fullIcs=await full.exported().text();
+ assert.equal((fullIcs.match(/BEGIN:VEVENT/g)||[]).length,selected.length);
+ assert.deepEqual(uids(fullIcs),uids(full.calendarFor(chronological)));
+ assert.ok(fullIcs.split('\r\n').every(line=>Buffer.byteLength(line,'utf8')<=75));
+ // Reabrir em outra data e visualização mantém a exportação completa.
+ const reloaded=setup(full.storage,'?dia=2026-10-15&visao=todos');
+ reloaded.els.favorites.listeners.click();reloaded.els['download-all'].listeners.click();
+ assert.equal(await reloaded.exported().text(),fullText);
+ reloaded.els['calendar-all'].listeners.click();assert.deepEqual(uids(await reloaded.exported().text()),uids(fullIcs));
+ // Um dia sem favoritos não impede exportar escolhas de outros dias.
+ const otherDay=setup({'mostra-sabado-2026':'[6]'},'?dia=2026-10-15');
+ otherDay.els.download.listeners.click();assert.equal(otherDay.exported(),undefined);
+ otherDay.els.calendar.listeners.click();assert.equal(otherDay.exported(),undefined);
+ otherDay.els['download-all'].listeners.click();assert.ok((await otherDay.exported().text()).includes(old.title));
+ assert.ok(otherDay.els.status.textContent.endsWith('1 opção.'));
+ otherDay.els['calendar-all'].listeners.click();assert.deepEqual(uids(await otherDay.exported().text()),uids(otherDay.calendarFor([old])));
+ otherDay.choose(old); // Remover a última escolha deve impedir downloads vazios.
+ const empty=setup(otherDay.storage);
+ for(const id of ['download-all','calendar-all']){
+  empty.els[id].listeners.click();assert.equal(empty.exported(),undefined);
+  assert.ok(empty.els.status.textContent.includes('Marque a estrela'));
+  assert.ok(!empty.els.status.textContent.includes('deste dia'));
+ }
+ console.log('Passou: 15 dias, curadoria padrão e programação completa, seleção por URL, filtros, ordenação e favoritos nas duas visões; TXT e calendário por dia e completos; fuso, duração, virada de dia, programas e UTF-8.');
 })();

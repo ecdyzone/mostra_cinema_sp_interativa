@@ -17,13 +17,15 @@
 .export-options{position:absolute;right:0;top:calc(100% + 8px);z-index:2;width:270px;max-width:calc(100vw - 36px);padding:6px;background:var(--paper);border:1px solid var(--line);border-radius:6px;box-shadow:0 8px 24px #1a292726}
 .export-options button{display:block;width:100%;min-height:44px;padding:10px 12px;border:0;border-radius:3px;background:transparent;color:var(--ink);text-align:left}
 .export-options button:hover,.export-options button:focus-visible{background:#edf3ee}
+.export-group+.export-group{border-top:1px solid var(--line);margin-top:6px;padding-top:6px}
+.export-group-label{margin:4px 12px;font-size:12px;font-weight:750;color:var(--muted)}
 @media(max-width:700px){.export-options{left:0;right:auto}}
 </style></head><body><a class="skip" href="#filmes">Ir para os filmes</a>
 <header><div class="wrap"><p class="edition">50ª Mostra Internacional de Cinema · São Paulo</p><h1>Dias de<br>cinema.</h1><span class="date" id="date-label">Quinta-feira · 15/10/2026</span><p>Uma seleção de filmes da 50ª Mostra de São Paulo para comparar temas, horários e cinemas. Escolha o dia, use os filtros e marque a estrela para montar sua lista. Depois, baixe sua lista ou exporte as sessões para o calendário.</p></div></header>
 <main class="wrap"><div class="intro"><p id="intro">Curadoria: comece pelos 9 destaques ou explore as 25 opções de 15/10. Ative “Toda a programação” para ampliar a lista.</p></div>
 <aside class="ticket-note" aria-labelledby="tickets-title"><h2 id="tickets-title">De olho nos ingressos</h2><p>Os filmes mais procurados costumam esgotar. A compra online de <strong>ingressos avulsos abre quatro dias antes, às 9h</strong>.<br>Exemplo: uma sessão de 20/10 começa a ser vendida em 16/10. <a href="https://mostra.org/ingressos" target="_blank" rel="noopener noreferrer">Confira as regras e os canais de compra</a>.</p></aside>
 <section class="controls" aria-label="Filtros de filmes"><div class="inputs"><label for="day">Escolher o dia<select id="day"><option value="2026-10-15">Quinta-feira · 15/10</option><option value="2026-10-16">Sexta-feira · 16/10</option><option value="2026-10-17">Sábado · 17/10</option><option value="2026-10-18">Domingo · 18/10</option><option value="2026-10-19">Segunda-feira · 19/10</option><option value="2026-10-20">Terça-feira · 20/10</option><option value="2026-10-21">Quarta-feira · 21/10</option><option value="2026-10-22">Quinta-feira · 22/10</option><option value="2026-10-23">Sexta-feira · 23/10</option><option value="2026-10-24">Sábado · 24/10</option><option value="2026-10-25">Domingo · 25/10</option><option value="2026-10-26">Segunda-feira · 26/10</option><option value="2026-10-27">Terça-feira · 27/10</option><option value="2026-10-28">Quarta-feira · 28/10</option><option value="2026-10-29">Quinta-feira · 29/10</option></select></label><label for="search">Buscar filme, diretor ou cinema<input id="search" type="search" placeholder="Nome, tema ou lugar…"></label><label for="theme">Escolher um tema<select id="theme"><option value="">Todos os temas</option><option>Animação</option><option>Brasil</option><option>Cidade</option><option>Cinema</option><option>Documentário</option><option>Família</option><option>Memória</option><option>Música</option><option>Política</option><option>Premiados</option><option>Relações</option></select></label><label for="sort">Ordenar<select id="sort"><option value="curadoria">Destaques primeiro</option><option value="horario">Horário da sessão</option><option value="duracao">Menor duração</option></select></label></div>
-<div class="buttons"><button class="action" id="scope" aria-pressed="false">Toda a programação</button><button class="action" id="featured" aria-pressed="false">Só os 9 destaques</button><button class="action" id="favorites" aria-pressed="false">Minha lista (0)</button><div class="tools"><details class="export-menu" id="export-menu"><summary id="export-toggle"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Exportar</summary><div class="export-options" role="group" aria-label="Opções de exportação"><button id="download">Baixar minha lista</button><button id="calendar">Exportar para calendário</button><button id="print">Salvar PDF</button></div></details></div></div><p class="filter-note">As estrelas ficam salvas neste navegador, quando disponível. Minha lista e as exportações reúnem as escolhas das duas visualizações no dia selecionado.</p></section>
+<div class="buttons"><button class="action" id="scope" aria-pressed="false">Toda a programação</button><button class="action" id="featured" aria-pressed="false">Só os 9 destaques</button><button class="action" id="favorites" aria-pressed="false">Minha lista (0)</button><div class="tools"><details class="export-menu" id="export-menu"><summary id="export-toggle"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Exportar</summary><div class="export-options"><div class="export-group" role="group" aria-labelledby="export-day-label"><p class="export-group-label" id="export-day-label">Dia selecionado</p><button id="download">Baixar minha lista</button><button id="calendar">Exportar para calendário</button><button id="print">Salvar PDF</button></div><div class="export-group" role="group" aria-labelledby="export-all-label"><p class="export-group-label" id="export-all-label">Todos os dias</p><button id="download-all">Baixar minha lista completa</button><button id="calendar-all">Exportar para calendário</button></div></div></details></div></div><p class="filter-note">As estrelas ficam salvas neste navegador, quando disponível. Minha lista do dia reúne as escolhas das duas visualizações. No menu Exportar, escolha o dia selecionado ou todos os dias para baixar seus favoritos, independentemente dos filtros.</p></section>
 <p class="count" id="count" role="status" aria-live="polite">25 opções em 15/10 · Curadoria</p><p id="status" role="status" aria-live="polite"></p><noscript><p class="nojs">A seleção de 15/10 está abaixo. Ative JavaScript para escolher outro dia e usar filtros e favoritos.</p></noscript>
 <section id="filmes" aria-label="Seleção de filmes" class="grid"><article class="film featured" data-id="2026-10-15-quem-matou-narciso-21:30-reserva-cultural-sala-1" data-day="2026-10-15">
 <p class="session-date">Quinta-feira · 15/10</p>
@@ -17985,8 +17987,8 @@ function downloadFile(content,type,filename){
  const blob=new Blob([content],{type}),url=URL.createObjectURL(blob),link=document.createElement('a');
  link.href=url;link.download=filename;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
-function selectionsForDay(){
- return films.filter(f=>f.date===$('day').value&&chosen.has(f.id)).sort((a,b)=>a.time.localeCompare(b.time));
+function selections(allDays=false){
+ return films.filter(f=>(allDays||f.date===$('day').value)&&chosen.has(f.id)).sort((a,b)=>a.date.localeCompare(b.date)||a.time.localeCompare(b.time));
 }
 function calendarText(value){
  return String(value).replace(/\\/g,'\\\\').replace(/\r\n|\r|\n/g,'\\n').replace(/;/g,'\\;').replace(/,/g,'\\,');
@@ -18022,23 +18024,35 @@ function buildCalendar(selected){
  lines.push('END:VCALENDAR');
  return lines.map(foldCalendarLine).join('\r\n')+'\r\n';
 }
-$('calendar').addEventListener('click',()=>{
+function exportCalendar(allDays=false){
  closeExports();
- const selected=selectionsForDay(),day=$('day').value;
- if(!selected.length){$('status').textContent='Marque a estrela em pelo menos uma opção deste dia para exportar para o calendário.';return;}
- downloadFile(buildCalendar(selected),'text/calendar;charset=utf-8','mostra-calendario-'+day+'.ics');
- $('status').textContent='Calendário de '+formatDate(day).slice(0,5)+' baixado. Abra o arquivo no seu aplicativo de calendário ou use a opção de importar.';
-});
+ const selected=selections(allDays),day=$('day').value;
+ if(!selected.length){$('status').textContent='Marque a estrela em pelo menos uma opção'+(allDays?'':' deste dia')+' para exportar para o calendário.';return;}
+ downloadFile(buildCalendar(selected),'text/calendar;charset=utf-8','mostra-calendario-'+(allDays?'todos-os-dias':day)+'.ics');
+ $('status').textContent=(allDays?'Calendário de todos os dias':'Calendário de '+formatDate(day).slice(0,5))+' baixado. Abra o arquivo no seu aplicativo de calendário ou use a opção de importar.';
+}
 
-$('download').addEventListener('click',()=>{
+function exportList(allDays=false){
  closeExports();
  const day=$('day').value;
- const selected=selectionsForDay();
- if(!selected.length){$('status').textContent='Marque a estrela em pelo menos uma opção deste dia para baixar a lista.';return;}
- const lines=[weekday(day)+' na Mostra — '+formatDate(day),'',...selected.map(f=>f.time+' — '+f.title+' ('+f.minutes+' min)\n'+f.venue+'\n'+f.director+'\n'+f.url+'\n'+(f.members||[]).map(m=>'  '+m.title+' ('+m.minutes+' min) — '+m.url+'\n').join('')),'Confira sessões e ingressos em https://mostra.org/'];
- downloadFile(lines.join('\n'),'text/plain;charset=utf-8','minha-lista-mostra-'+day+'.txt');
- $('status').textContent='Lista de '+formatDate(day).slice(0,5)+' baixada com '+selected.length+' '+(selected.length===1?'opção.':'opções.');
-});
+ const selected=selections(allDays);
+ if(!selected.length){$('status').textContent='Marque a estrela em pelo menos uma opção'+(allDays?'':' deste dia')+' para baixar a lista.';return;}
+ const lines=allDays?['Minha lista completa na Mostra — Todos os dias','']:[];
+ let previousDay='';
+ for(const f of selected){
+  if(f.date!==previousDay){
+   lines.push(weekday(f.date)+' na Mostra — '+formatDate(f.date),'');previousDay=f.date;
+  }
+  lines.push(f.time+' — '+f.title+' ('+f.minutes+' min)\n'+f.venue+'\n'+f.director+'\n'+f.url+'\n'+(f.members||[]).map(m=>'  '+m.title+' ('+m.minutes+' min) — '+m.url+'\n').join(''));
+ }
+ lines.push('Confira sessões e ingressos em https://mostra.org/');
+ downloadFile(lines.join('\n'),'text/plain;charset=utf-8','minha-lista-mostra-'+(allDays?'todos-os-dias':day)+'.txt');
+ $('status').textContent=(allDays?'Lista completa':'Lista de '+formatDate(day).slice(0,5))+' baixada com '+selected.length+' '+(selected.length===1?'opção.':'opções.');
+}
+$('calendar').addEventListener('click',()=>exportCalendar());
+$('calendar-all').addEventListener('click',()=>exportCalendar(true));
+$('download').addEventListener('click',()=>exportList());
+$('download-all').addEventListener('click',()=>exportList(true));
 $('print').addEventListener('click',()=>{closeExports();window.print();});updateThemes();update();
 
 </script></body></html>
