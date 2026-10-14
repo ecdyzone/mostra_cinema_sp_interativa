@@ -1,44 +1,95 @@
-Acesse o site interativo: https://ecdyzone.github.io/mostra_cinema_sp_interativa/
+# Mostra de Cinema de São Paulo — 2026
 
----
+[Acesse o guia interativo](https://ecdyzone.github.io/mostra_cinema_sp_interativa/) para escolher e combinar sessões da [50ª Mostra de Cinema de São Paulo](https://mostra.org/), de **15 a 29 de outubro de 2026**. A página reúne horários, duração, cinemas, links oficiais e motivos para assistir aos filmes da curadoria.
 
-Protótipo para tornar a escolha de filmes da mostra de cinema de são paulo mais fácil e interativa.
+A **curadoria é a visualização padrão**, com 131 títulos e 428 opções de sessão. O botão **Toda a programação** amplia a lista para as 1.373 opções das grades presenciais disponíveis. Os curtas de Pelechian são agrupados em programas: essas opções correspondem, respectivamente, a 446 e 1.391 registros individuais de filmes. Os números refletem a programação salva no projeto.
 
-https://mostra.org/
+## Usar e compartilhar
 
-Agora há seleções para **todos os dias de 15 a 29 de outubro de 2026**, com horários, duração, cinemas e links oficiais. O seletor de dia atualiza a lista, os destaques e os favoritos. A lista para download contém apenas as escolhas do dia selecionado.
+Abra [index.html](index.html) diretamente no navegador ou acesse o site publicado. O HTML é autossuficiente, sem dependências externas ou arquivos de dados para carregar durante o uso.
 
-Marque as estrelas e use **Exportar para calendário** para baixar as sessões escolhidas no dia em formato `.ics`. Abra o arquivo no aplicativo de calendário ou importe-o pelas configurações do serviço. Cada evento inclui nome, local, link, início e término estimado pela duração do filme; os horários correspondem a São Paulo. O download em texto continua disponível.
+- Escolha a data, use busca e filtros de tema e duração e marque as estrelas.
+- Ative **Toda a programação** para ampliar a lista. Essa visualização começa ordenada por horário e inclui filmes com informações básicas e link oficial.
+- **Minha lista do dia** reúne os favoritos das duas visualizações, inclusive os filmes fora da curadoria. Os downloads incluem todas essas escolhas do dia, independentemente dos filtros ativos.
+- Abra o menu **Exportar** para escolher **Baixar minha lista** (texto), **Exportar para calendário** ou **Salvar PDF**. Abra o arquivo `.ics` no aplicativo de calendário ou importe-o no serviço que utiliza. Cada evento inclui nome, local, link, início e término estimado pela duração; os horários correspondem a São Paulo.
+- Compartilhe uma data com `?dia=2026-10-24`; acrescente `&visao=todos` para abrir a programação completa. [Exemplo com os dois parâmetros](https://ecdyzone.github.io/mostra_cinema_sp_interativa/?dia=2026-10-24&visao=todos).
 
-A página explica o recorte da curadoria, apresenta as quatro fontes de `urls.md` e informa a abertura da venda online de ingressos avulsos quatro dias antes da sessão, às 9h, conforme as regras oficiais da Mostra.
+Os favoritos ficam no navegador. As escolhas da primeira versão de 17/10 são migradas automaticamente quando o navegador e o endereço do site são os mesmos.
 
-A **curadoria é o padrão**, com 428 opções correspondentes a 446 sessões de filmes. O botão **Toda a programação** amplia a lista para todas as sessões presenciais das grades de 15 a 29/10: são 1.373 opções, correspondentes a 1.391 registros de filmes. Os curtas de Pelechian são agrupados em programas nas duas visualizações.
+A página explica o recorte da curadoria, apresenta as [quatro fontes editoriais](referencias/urls.md) e informa a abertura da compra online quatro dias antes da sessão, às 9h, com link para as regras oficiais da Mostra.
 
-Ao abrir a programação completa, a ordenação começa por horário. Busca, temas e duração continuam disponíveis. **Minha lista do dia** e os downloads reúnem as estrelas marcadas nas duas visualizações, inclusive os filmes fora da curadoria.
+## Estrutura do repositório
 
-É possível compartilhar um dia diretamente pelo parâmetro `?dia=2026-10-24` na URL. Para abrir a programação completa, acrescente `&visao=todos`. Os favoritos da versão anterior de 17/10 são migrados automaticamente no mesmo navegador e endereço do site.
+Esta pasta é a raiz do repositório. Todos os comandos abaixo partem dela.
 
-## Atualizar a seleção
+```text
+.
+├── index.html                   # Site e dados embutidos; arquivo atualizado pelo gerador
+├── README.md                    # Uso, manutenção e curadoria
+├── docs/
+│   └── programacao.md           # Coleta, cache, formato e validação das grades
+├── programacao_por_dia/         # Grades Markdown: 15 linhas por filme e sessão
+├── referencias/
+│   ├── curadoria_site.json      # Textos, justificativas, links e prioridades
+│   ├── filmes-para-escolher.md  # Guia inicial com sinopses e critérios de escolha
+│   ├── todos-os-filmes-citados.md # Catálogo dos títulos citados nas fontes
+│   └── urls.md                  # Quatro matérias de origem
+├── cache/
+│   └── programacao/             # HTML original da Mostra para processamento local
+└── scripts/                     # Coleta, sincronização, geração e verificações
+```
 
-A coleta das grades pode ser automatizada com `scripts/baixar_programacao.py`. Consulte o [guia de download e extração](../scripts/README-programacao.md) para reutilizar o cache e gerar os dias faltantes sem novas requisições quando a grade completa já estiver no HTML.
+O cache original é mantido no repositório para permitir reproduzir a extração e recuperar os endereços oficiais das fichas sem novos downloads. Arquivos temporários de Python e cópias de editor são ignorados pelo Git.
 
-O HTML continua autossuficiente: não precisa carregar arquivos de dados para funcionar. Para acrescentar dias, na raiz do projeto:
+## Atualizar os dados e o HTML
 
-1. Salve a programação em `programacao_por_dia/`, com um bloco de 15 linhas por filme, seguindo as grades existentes.
-2. Execute `python scripts/sincronizar_curadoria.py`. O script cruza as grades com `referencias/todos-os-filmes-citados.md`, reaproveita as sinopses de `referencias/filmes-para-escolher.md` e cadastra as datas em `referencias/curadoria_site.json`, sem acessar a rede. Textos, links e prioridades já definidos são preservados.
-3. Execute `python scripts/gerar_site.py` para atualizar os cartões e os dados em `github/index.html`. O gerador inclui todas as sessões das grades e identifica quais pertencem à curadoria; os filmes restantes recebem dados básicos e links, sem sinopses ou prêmios presumidos.
-4. Execute `node scripts/verificar_site.cjs` para verificar os 15 dias nas duas visualizações, filtros por tema, ordenação, favoritos, exportações em texto e calendário e os programas de Pelechian. A verificação do calendário cobre fuso, duração, virada de dia, identificadores estáveis e codificação de caracteres. Algumas verificações de conteúdo usam sessões conhecidas; atualize-as se mudar essas seleções.
-
-Depois de gerar novas grades, o fluxo habitual é:
+Requisitos: **Python 3.10 ou superior** e **Node.js 18 ou superior** para as verificações do site. Os scripts usam apenas as bibliotecas padrão; não é necessário instalar pacotes.
 
 ```sh
+python scripts/baixar_programacao.py --faltantes --offline
 python scripts/sincronizar_curadoria.py
 python scripts/gerar_site.py
 node scripts/verificar_site.cjs
 ```
 
-Para ajustar a seleção, edite `referencias/curadoria_site.json`: `days` associa datas ISO a prioridades. Números de `1` a `98` marcam destaques e `99` deixa o filme nas outras opções. `default_priority` orienta os destaques de dias ainda não configurados; um número menor tem preferência e `null` não sugere destaque.
+1. **Coleta:** gera os Markdown faltantes em `programacao_por_dia/` usando o HTML salvo em `cache/programacao/`. O modo `--offline` não acessa o site e preserva as grades existentes.
+2. **Sincronização:** cruza as grades com o catálogo de referências, reaproveita as sinopses do guia e cadastra títulos e datas na curadoria. Preserva textos, links e prioridades existentes e informa justificativas pendentes.
+3. **Geração:** atualiza os cartões e os dados em `index.html`, incluindo as duas visualizações. Filmes fora da curadoria recebem informações básicas e links oficiais.
+4. **Verificação:** confere os 15 dias, as justificativas da curadoria, as duas visualizações, filtros, ordenação, favoritos e exportações.
 
-Em dias novos, a sincronização seleciona até 12 títulos com prioridade geral, baseada nas escolhas iniciais do guia, nos destaques de dias anteriores e nos filmes com sinopse. Programas restaurados de Pelechian também recebem destaque. Um título com mais de uma sessão pode aparecer em vários cartões. Isso é um ponto de partida editável, não uma nova avaliação crítica dos filmes.
+Se todas as grades estiverem prontas, comece pela sincronização. Para atualizar o HTML após editar apenas a curadoria, execute a geração e a verificação. O HTML também contém o CSS e o JavaScript da interface: mantenha-o ao atualizar os dados.
 
-Os filmes de Pelechian no mesmo dia, horário e sala são apresentados como um programa, com links individuais e duração calculada pela soma dos filmes. As grades podem usar posições diferentes para linhas vazias; o gerador valida e lê os campos preenchidos.
+Para acrescentar ou revisar grades, siga o [guia de coleta](docs/programacao.md). Um único HTML salvo contém a programação de vários dias em `window.__NUXT__` e pode atender a todo o período sem novas requisições. O cache registra a programação no momento do download; atualizações no site oficial exigem uma nova coleta.
+
+## Ajustar a curadoria
+
+Edite [referencias/curadoria_site.json](referencias/curadoria_site.json):
+
+- `summary`: descrição curta do filme.
+- `why`: justificativa que ajude a decidir, indicando temas, proposta ou um diferencial.
+- `award`, `tags` e `url`: premiações, categorias e link oficial.
+- `days`: datas ISO associadas a prioridades; `1` a `98` marca destaque e `99` mantém o filme entre as outras opções da curadoria.
+- `default_priority`: preferência para sugestões em dias novos; números menores têm prioridade e `null` não sugere destaque.
+
+**Todo título da curadoria precisa ter um `why`.** A sincronização preserva os textos existentes e aproveita o trecho “Vale ver se” do guia ao cadastrar um título novo. Quando não encontra esse trecho, deixa a justificativa para preenchimento editorial. O gerador recusa campos ausentes, vazios ou contendo apenas espaços e preserva o HTML anterior até a correção. Filmes fora da curadoria podem continuar sem justificativa.
+
+Os textos se baseiam nas sinopses, nos temas das fichas oficiais salvas no cache e nas premiações das referências; não são críticas escritas após assistir aos filmes. O catálogo da curadoria é um recorte das quatro matérias de origem. A visualização completa inclui títulos das grades que não aparecem nessas matérias.
+
+Em dias novos, a sincronização sugere até 12 títulos com prioridade geral, baseada nas escolhas iniciais do guia, nos destaques de dias anteriores e nos filmes com sinopse. Programas restaurados de Pelechian também recebem destaque. Um título com várias sessões pode aparecer em vários cartões. Essas sugestões são um ponto de partida editável.
+
+Os filmes de Pelechian com o mesmo dia, horário e sala são apresentados como um programa, com links individuais e duração calculada pela soma dos filmes. As grades podem ter posições diferentes para linhas vazias; o gerador valida e lê os campos preenchidos.
+
+## Verificar as alterações
+
+```sh
+python -m unittest discover -s scripts -p 'test_*.py'
+node scripts/verificar_site.cjs
+```
+
+Os testes Python verificam extração, cache, preservação das grades, justificativas obrigatórias e proteção do HTML anterior quando faltam dados. A comparação com as páginas reais usa os HTMLs em `cache/programacao/`; sem cache, essa parte é marcada como não executada.
+
+A verificação Node.js exercita a lógica da interface e as exportações com um DOM simulado. Confere fuso, duração, virada de dia, identificadores estáveis e UTF-8 do calendário, além dos programas de Pelechian. Algumas verificações usam sessões conhecidas; revise-as se alterar o período ou essas seleções. Não substitui uma revisão visual no navegador.
+
+## Publicação
+
+O GitHub Pages serve o [index.html](index.html) da raiz deste repositório. As alterações dos scripts são locais; para publicá-las, envie os arquivos atualizados ao repositório e mantenha o Pages configurado para a raiz da branch de publicação. Não há etapa de build nem pasta `github/` adicional dentro do projeto.

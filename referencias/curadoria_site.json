@@ -1,0 +1,2284 @@
+{
+  "somos-alienigenas": {
+    "title": "Somos Alienígenas",
+    "tags": [
+      "Animação"
+    ],
+    "summary": "Animação japonesa de Kohei Kadowaki, citada entre os títulos de Cannes.",
+    "award": "",
+    "why": "Para quem busca animação japonesa sobre adolescência e as marcas que as escolhas da juventude deixam na vida adulta.",
+    "url": "https://mostra.org/filmes/somos-alienigenas",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-23": 99,
+      "2026-10-15": 99,
+      "2026-10-20": 99
+    },
+    "legacyId": 0,
+    "default_priority": null
+  },
+  "butterfly-jam": {
+    "title": "Butterfly Jam",
+    "tags": [
+      "Cinema"
+    ],
+    "summary": "Ficção de Kantemir Balagov, citada entre os títulos de Cannes.",
+    "award": "",
+    "why": "Para quem se interessa por amadurecimento em famílias migrantes, conflitos entre pai e filho e expectativas de masculinidade.",
+    "url": "https://mostra.org/filmes/butterfly-jam",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-25": 99,
+      "2026-10-15": 99,
+      "2026-10-22": 99
+    },
+    "legacyId": 1,
+    "default_priority": null
+  },
+  "a-historia-do-concreto": {
+    "title": "A História do Concreto",
+    "tags": [
+      "Documentário",
+      "Cinema",
+      "Cidade"
+    ],
+    "summary": "John Wilson transforma o concreto de Nova York em ponto de partida para investigar a cidade e as dificuldades de fazer cinema.",
+    "award": "Exibido em Sundance",
+    "why": "Uma descoberta para quem gosta de observar o cotidiano por outro ângulo.",
+    "url": "https://mostra.org/filmes/a-historia-do-concreto",
+    "days": {
+      "2026-10-17": 3,
+      "2026-10-22": 4,
+      "2026-10-16": 3
+    },
+    "legacyId": 2,
+    "default_priority": 8
+  },
+  "a-violinista": {
+    "title": "A Violinista",
+    "tags": [
+      "Animação",
+      "Música",
+      "Memória"
+    ],
+    "summary": "Dois amigos músicos em Singapura têm seus sonhos interrompidos pela guerra. Décadas depois, um violino ajuda a reconstruir a história.",
+    "award": "Melhor filme · Annecy",
+    "why": "Para quem gosta de música, animação e histórias que atravessam gerações.",
+    "url": "https://mostra.org/filmes/a-violinista",
+    "days": {
+      "2026-10-17": 1,
+      "2026-10-25": 5,
+      "2026-10-29": 2,
+      "2026-10-16": 2
+    },
+    "legacyId": 3,
+    "default_priority": 6
+  },
+  "o-dia-em-que-ela-volta": {
+    "title": "O Dia em que Ela Volta",
+    "tags": [
+      "Cinema"
+    ],
+    "summary": "Uma opção curta para acompanhar o cinema de Hong Sang-soo.",
+    "award": "",
+    "why": "Para quem prefere uma sessão curta, centrada em uma mulher que retoma a carreira e precisa falar sobre si em entrevistas.",
+    "url": "https://mostra.org/filmes/o-dia-em-que-ela-volta",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-23": 99,
+      "2026-10-26": 99,
+      "2026-10-27": 99
+    },
+    "legacyId": 4,
+    "default_priority": null
+  },
+  "isabel": {
+    "title": "Isabel",
+    "tags": [
+      "Cinema",
+      "Brasil"
+    ],
+    "summary": "Ficção brasileira de Gabe Klinger.",
+    "award": "",
+    "why": "Para quem se interessa por autonomia feminina e pelo desejo de transformar um trabalho no universo do vinho em um projeto próprio.",
+    "url": "https://mostra.org/filmes/isabel",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-27": 99
+    },
+    "legacyId": 5,
+    "default_priority": null
+  },
+  "como-se-divorciar-durante-a-guerra": {
+    "title": "Como se Divorciar Durante a Guerra",
+    "tags": [
+      "Relações",
+      "Política"
+    ],
+    "summary": "Um casal anuncia a separação na véspera da invasão da Ucrânia. A crise íntima se mistura à guerra e às divergências políticas da família.",
+    "award": "Melhor direção de ficção internacional · Sundance",
+    "why": "Para quem gosta de relações pessoais atravessadas pela política.",
+    "url": "https://mostra.org/filmes/como-se-divorciar-durante-a-guerra",
+    "days": {
+      "2026-10-17": 2,
+      "2026-10-24": 8,
+      "2026-10-20": 1,
+      "2026-10-27": 2
+    },
+    "legacyId": 6,
+    "default_priority": 7
+  },
+  "everytime": {
+    "title": "Everytime",
+    "tags": [
+      "Relações",
+      "Família",
+      "Memória"
+    ],
+    "summary": "Após a morte de uma adolescente, sua mãe, irmã e namorado fazem a viagem de férias que a tragédia interrompeu.",
+    "award": "Vencedor de Um Certo Olhar · Cannes",
+    "why": "Uma escolha sobre luto, culpa e perdão. Tema sensível: morte de uma filha.",
+    "url": "https://mostra.org/filmes/everytime",
+    "days": {
+      "2026-10-17": 5,
+      "2026-10-24": 7,
+      "2026-10-23": 5,
+      "2026-10-25": 99,
+      "2026-10-21": 6,
+      "2026-10-22": 6
+    },
+    "legacyId": 7,
+    "default_priority": 10
+  },
+  "papel-coadjuvante": {
+    "title": "Papel Coadjuvante",
+    "tags": [
+      "Cinema",
+      "Memória"
+    ],
+    "summary": "Um ator aposentado, acostumado a interpretar heróis, recebe de uma jovem diretora a proposta de viver um personagem secundário e antipático.",
+    "award": "Prêmio Especial do Júri e prêmio da crítica · Roterdã",
+    "why": "Para quem gosta de cinema sobre atuação, ego e reinvenção.",
+    "url": "https://mostra.org/filmes/papel-coadjuvante",
+    "days": {
+      "2026-10-17": 6,
+      "2026-10-23": 3,
+      "2026-10-28": 4,
+      "2026-10-15": 3
+    },
+    "legacyId": 8,
+    "default_priority": 8
+  },
+  "o-julgamento-de-hein": {
+    "title": "O Julgamento de Hein",
+    "tags": [
+      "Premiados"
+    ],
+    "summary": "Uma opção para conhecer a seleção premiada pelo júri do Teddy em Berlim.",
+    "award": "Prêmio do Júri do Teddy Award · Berlim",
+    "why": "Uma descoberta pela premiação. Confira a sinopse na programação oficial.",
+    "url": "https://mostra.org/filmes/o-julgamento-de-hein",
+    "days": {
+      "2026-10-17": 8,
+      "2026-10-23": 9,
+      "2026-10-16": 10,
+      "2026-10-27": 6
+    },
+    "legacyId": 9,
+    "default_priority": 13
+  },
+  "a-professora-de-frances": {
+    "title": "A Professora de Francês",
+    "tags": [
+      "Cinema",
+      "Brasil"
+    ],
+    "summary": "Ficção brasileira de Ricardo Alves Jr.",
+    "award": "",
+    "why": "Para quem busca cinema brasileiro que aproxima identidade LGBTQIA+, religião e intolerância por meio de uma protagonista feminina.",
+    "url": "https://mostra.org/filmes/a-professora-de-frances",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-19": 99
+    },
+    "legacyId": 10,
+    "default_priority": null
+  },
+  "vergonha-e-dinheiro": {
+    "title": "Vergonha e Dinheiro",
+    "tags": [
+      "Política",
+      "Família"
+    ],
+    "summary": "Depois de perder o sustento no campo, um casal tenta encontrar trabalho e moradia na capital do Kosovo.",
+    "award": "Grande Prêmio do Júri de ficção internacional · Sundance",
+    "why": "Para quem se interessa por trabalho, desigualdade e dignidade.",
+    "url": "https://mostra.org/filmes/vergonha-e-dinheiro",
+    "days": {
+      "2026-10-17": 4,
+      "2026-10-28": 6,
+      "2026-10-15": 4,
+      "2026-10-16": 6
+    },
+    "legacyId": 11,
+    "default_priority": 9
+  },
+  "zi": {
+    "title": "Zi",
+    "tags": [
+      "Cinema"
+    ],
+    "summary": "Uma oportunidade de acompanhar o cinema de Kogonada.",
+    "award": "",
+    "why": "Para quem gosta de encontros atravessados por uma premissa fantástica: visões do futuro interferem na experiência da protagonista.",
+    "url": "https://mostra.org/filmes/zi",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-24": 99,
+      "2026-10-29": 99,
+      "2026-10-26": 99
+    },
+    "legacyId": 12,
+    "default_priority": null
+  },
+  "eu-cresci-uma-polegada-quando-meu-pai-morreu": {
+    "title": "eu cresci uma polegada quando meu pai morreu",
+    "tags": [
+      "Premiados"
+    ],
+    "summary": "Uma descoberta do cinema filipino, com uma sessão de pouco mais de uma hora.",
+    "award": "Prêmio NETPAC · Roterdã",
+    "why": "Para ampliar a seleção com um filme da Ásia e do Pacífico.",
+    "url": "https://mostra.org/filmes/eu-cresci-uma-polegada-quando-meu-pai-morreu",
+    "days": {
+      "2026-10-17": 9,
+      "2026-10-23": 99,
+      "2026-10-28": 9,
+      "2026-10-16": 12
+    },
+    "legacyId": 13,
+    "default_priority": 14
+  },
+  "aqui": {
+    "title": "Aquí",
+    "tags": [
+      "Cinema"
+    ],
+    "summary": "Ficção de Tiago Guedes. Sessão longa: 3h23.",
+    "award": "",
+    "why": "Para quem quer uma narrativa sobre migração, família e reconstrução da identidade, e tem disposição para uma sessão de 3h23.",
+    "url": "https://mostra.org/filmes/aqui",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-28": 99,
+      "2026-10-29": 99,
+      "2026-10-19": 99
+    },
+    "legacyId": 14,
+    "default_priority": null
+  },
+  "eu-vejo-edificios-cairem-como-raios": {
+    "title": "Eu Vejo Edifícios Caírem como Raios",
+    "tags": [
+      "Relações",
+      "Política"
+    ],
+    "summary": "Amigos de infância chegam aos trinta anos confrontando sonhos frustrados, segredos e diferenças sociais.",
+    "award": "Prêmio do público da Quinzena de Cineastas · Cannes",
+    "why": "Para quem gosta de histórias de amizade, comunidade e pertencimento.",
+    "url": "https://mostra.org/filmes/eu-vejo-edificios-cairem-como-raios",
+    "days": {
+      "2026-10-17": 7,
+      "2026-10-23": 8,
+      "2026-10-25": 99,
+      "2026-10-20": 4
+    },
+    "legacyId": 15,
+    "default_priority": 12
+  },
+  "di-cavalcanti": {
+    "title": "Di Cavalcanti",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Documentário de Ana Carolina, para quem se interessa pelo artista e pela cultura brasileira.",
+    "award": "",
+    "why": "Uma escolha para aproximar artes visuais e cinema brasileiro, conhecendo Di Cavalcanti pelo olhar da cineasta Ana Carolina.",
+    "url": "https://mostra.org/filmes/di-cavalcanti",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-21": 99,
+      "2026-10-26": 99
+    },
+    "legacyId": 16,
+    "default_priority": null
+  },
+  "vicentina-pede-desculpas": {
+    "title": "Vicentina Pede Desculpas",
+    "tags": [
+      "Cinema",
+      "Brasil"
+    ],
+    "summary": "Ficção brasileira de Gabriel Martins, com 2h28 de duração.",
+    "award": "",
+    "why": "Para quem se interessa por culpa, perdão e vínculos familiares: uma mãe procura as famílias das vítimas de um acidente provocado pelo filho.",
+    "url": "https://mostra.org/filmes/vicentina-pede-desculpas",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-22": 99
+    },
+    "legacyId": 17,
+    "default_priority": null
+  },
+  "ney-por-tras-das-mascaras": {
+    "title": "Ney por Trás das Máscaras",
+    "tags": [
+      "Documentário",
+      "Música"
+    ],
+    "summary": "Um documentário dedicado a Ney Matogrosso.",
+    "award": "Música e cultura brasileira",
+    "why": "Para quem quer fechar o dia com uma personalidade da música brasileira.",
+    "url": "https://mostra.org/filmes/ney-por-tras-das-mascaras",
+    "days": {
+      "2026-10-17": 10,
+      "2026-10-19": 3
+    },
+    "legacyId": 18,
+    "default_priority": 15
+  },
+  "privadas-de-suas-vidas": {
+    "title": "Privadas de Suas Vidas",
+    "tags": [
+      "Cinema",
+      "Brasil"
+    ],
+    "summary": "Ficção brasileira de Gustavo Vinagre e Gurcius Gewdner.",
+    "award": "",
+    "why": "Para quem se interessa por uma premissa de horror insólita, com privadas assassinas, maternidade, luto e temas LGBTQIA+.",
+    "url": "https://mostra.org/filmes/privadas-de-suas-vidas",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-23": 99
+    },
+    "legacyId": 19,
+    "default_priority": null
+  },
+  "rochas-vermelhas": {
+    "title": "Rochas Vermelhas",
+    "tags": [
+      "Cinema"
+    ],
+    "summary": "Ficção de Bruno Dumont, citada entre os títulos de Cannes.",
+    "award": "",
+    "why": "Para quem se interessa pelos riscos e pelas disputas da juventude, com amizades e rivalidades em torno de saltos de penhascos.",
+    "url": "https://mostra.org/filmes/rochas-vermelhas",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-23": 99,
+      "2026-10-25": 99,
+      "2026-10-19": 99
+    },
+    "legacyId": 20,
+    "default_priority": null
+  },
+  "17": {
+    "title": "17",
+    "tags": [
+      "Relações",
+      "Política"
+    ],
+    "summary": "Duas adolescentes tentam romper um ciclo de violência após uma agressão sexual numa excursão escolar. Tema sensível: violência sexual.",
+    "award": "",
+    "why": "Para quem procura histórias de solidariedade entre adolescentes e enfrentamento da violência sexual; o tema da agressão é central.",
+    "url": "https://mostra.org/filmes/17",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-25": 99,
+      "2026-10-28": 12,
+      "2026-10-20": 9
+    },
+    "legacyId": 21,
+    "default_priority": 37
+  },
+  "me-deixa-ser": {
+    "title": "Me Deixa Ser",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Documentário brasileiro de Viviane D’Avilla.",
+    "award": "",
+    "why": "Para quem quer compreender experiências intersexo, autonomia sobre o corpo e as consequências de intervenções médicas sem consentimento.",
+    "url": "https://mostra.org/filmes/me-deixa-ser",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-22": 99
+    },
+    "legacyId": 22,
+    "default_priority": null
+  },
+  "era-uma-vez-no-harlem": {
+    "title": "Era Uma Vez no Harlem",
+    "tags": [
+      "Documentário"
+    ],
+    "summary": "Documentário de David Greaves e William Greaves.",
+    "award": "",
+    "why": "Para quem se interessa pela cultura negra e pela memória coletiva do Harlem, reunidas nas conversas de artistas do Renascimento do Harlem.",
+    "url": "https://mostra.org/filmes/era-uma-vez-no-harlem",
+    "days": {
+      "2026-10-17": 99,
+      "2026-10-23": 99,
+      "2026-10-15": 99,
+      "2026-10-29": 99
+    },
+    "legacyId": 23,
+    "default_priority": null
+  },
+  "chao": {
+    "title": "ChaO",
+    "tags": [
+      "Animação"
+    ],
+    "summary": "Animação japonesa de Yasuhiro Aoki, premiada pelo júri de Annecy.",
+    "award": "Prêmio do Júri · Annecy",
+    "why": "Uma descoberta de animação para começar o sábado.",
+    "url": "https://mostra.org/filmes/chao",
+    "days": {
+      "2026-10-24": 4,
+      "2026-10-18": 2,
+      "2026-10-28": 5,
+      "2026-10-22": 5,
+      "2026-10-16": 5,
+      "2026-10-20": 3
+    },
+    "default_priority": 9
+  },
+  "o-caminho-para-jerico": {
+    "title": "O Caminho para Jericó",
+    "tags": [
+      "Documentário"
+    ],
+    "summary": "Documentário de Amos Gitai.",
+    "award": "Veneza: citado na seleção; prêmio não informado",
+    "why": "Para quem procura documentário político e quer acompanhar a relação entre memória histórica, direitos humanos e crises atuais no cinema de Amos Gitai.",
+    "url": "https://mostra.org/filmes/o-caminho-para-jerico",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-25": 99,
+      "2026-10-26": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "nao-estamos-sonhando": {
+    "title": "Não Estamos Sonhando",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Ulisses Arthur.",
+    "award": "",
+    "why": "Para quem busca juventude brasileira, narrativas negras e LGBTQIA+, com arte, corpo e desejo entre os temas da escolha.",
+    "url": "https://mostra.org/filmes/nao-estamos-sonhando",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "a-extraordinaria-vida-de-vera-valdez": {
+    "title": "A Extraordinária Vida de Vera Valdez",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Sobre Vera Valdez.",
+    "award": "",
+    "why": "Para quem se interessa pela trajetória de Vera Valdez e pelas relações entre vida artística, memória e história política brasileira.",
+    "url": "https://mostra.org/filmes/a-extraordinaria-vida-de-vera-valdez",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-22": 99
+    },
+    "default_priority": null
+  },
+  "chicas-tristes": {
+    "title": "Chicas Tristes",
+    "tags": [
+      "Premiados"
+    ],
+    "summary": "Ficção de Fernanda Tovar premiada na seleção Geração 14plus de Berlim.",
+    "award": "Urso de Cristal de melhor filme, Geração 14plus · Berlim",
+    "why": "Uma opção para conhecer o cinema mexicano da seleção.",
+    "url": "https://mostra.org/filmes/chicas-tristes",
+    "days": {
+      "2026-10-24": 10,
+      "2026-10-21": 10,
+      "2026-10-26": 5,
+      "2026-10-20": 7
+    },
+    "default_priority": 15
+  },
+  "castelo-de-lata": {
+    "title": "Castelo de Lata",
+    "tags": [
+      "Documentário",
+      "Premiados"
+    ],
+    "summary": "Documentário de Alexander Murphy reconhecido pela premiação de documentários de Cannes.",
+    "award": "Prêmio Especial do Júri de documentário / Olho de Ouro · Cannes",
+    "why": "Uma descoberta para quem acompanha documentários premiados.",
+    "url": "https://mostra.org/filmes/castelo-de-lata",
+    "days": {
+      "2026-10-24": 9,
+      "2026-10-18": 5,
+      "2026-10-16": 11,
+      "2026-10-20": 5
+    },
+    "default_priority": 14
+  },
+  "o-diario-de-uma-camareira": {
+    "title": "O Diário de uma Camareira",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Radu Jude.",
+    "award": "Cannes: citado na seleção; prêmio não informado",
+    "why": "Para quem quer uma adaptação literária voltada ao trabalho, à migração e às desigualdades, pelo olhar de Radu Jude.",
+    "url": "https://mostra.org/filmes/o-diario-de-uma-camareira",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-21": 99,
+      "2026-10-15": 99,
+      "2026-10-26": 99,
+      "2026-10-16": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "funk": {
+    "title": "Funk",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Aly Muritiba.",
+    "award": "Tribeca: menção especial",
+    "why": "Para quem se interessa pelo encontro entre cultura brasileira, protagonismo feminino e experiências LGBTQIA+ no cinema de Aly Muritiba.",
+    "url": "https://mostra.org/filmes/funk",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-22": 99
+    },
+    "default_priority": null
+  },
+  "o-comeco": {
+    "title": "O Começo",
+    "tags": [
+      "Documentário",
+      "Experimental",
+      "Memória"
+    ],
+    "summary": "Arquivos da Revolução Russa e história em recorrências.",
+    "award": "Cópia restaurada · Projeto Pelechian",
+    "why": "Para quem quer descobrir como a montagem transforma arquivos da Revolução Russa em uma experiência de ritmo e recorrência, em cópia restaurada.",
+    "url": "https://mostra.org/filmes/o-comeco",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "nosso-seculo": {
+    "title": "Nosso Século",
+    "tags": [
+      "Documentário",
+      "Experimental",
+      "Memória"
+    ],
+    "summary": "Aviação e corrida espacial em montagem de arquivo.",
+    "award": "Cópia restaurada · Projeto Pelechian",
+    "why": "Para quem se interessa por aviação, corrida espacial e imagens de arquivo reorganizadas pela montagem experimental de Pelechian.",
+    "url": "https://mostra.org/filmes/nosso-seculo",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "fim": {
+    "title": "Fim",
+    "tags": [
+      "Documentário",
+      "Experimental",
+      "Memória"
+    ],
+    "summary": "Rostos e gestos em uma forma muito curta.",
+    "award": "Cópia restaurada · Projeto Pelechian",
+    "why": "Para quem quer uma porta de entrada breve no cinema de Pelechian, com atenção a rostos, gestos e às relações criadas pela montagem.",
+    "url": "https://mostra.org/filmes/fim",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "vida": {
+    "title": "Vida",
+    "tags": [
+      "Documentário",
+      "Experimental",
+      "Memória"
+    ],
+    "summary": "Um retorno ao elementar em uma forma muito curta.",
+    "award": "Cópia restaurada · Projeto Pelechian",
+    "why": "Para quem quer experimentar uma forma muito curta de cinema, em que imagens e montagem concentram a atenção no tema da vida.",
+    "url": "https://mostra.org/filmes/vida",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "por-dentro-de-amir": {
+    "title": "Por Dentro de Amir",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Amir Azizi.",
+    "award": "Veneza: direção na Jornada dos Autores",
+    "why": "Para quem se interessa por migração, memória e identidade; a direção de Amir Azizi foi premiada na Jornada dos Autores de Veneza.",
+    "url": "https://mostra.org/filmes/por-dentro-de-amir",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-18": 99,
+      "2026-10-16": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "a-morte-nao-tem-dono": {
+    "title": "A Morte Não Tem Dono",
+    "tags": [
+      "Política",
+      "Família"
+    ],
+    "summary": "Uma herdeira volta à Venezuela para vender a plantação do pai, mas antigos funcionários ocupam a propriedade. O confronto revela a violência ligada àquelas terras.",
+    "award": "",
+    "why": "Para quem se interessa por conflitos de terra, herança e memória social.",
+    "url": "https://mostra.org/filmes/a-morte-nao-tem-dono",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-23": 99,
+      "2026-10-28": 99,
+      "2026-10-22": 11
+    },
+    "default_priority": 41
+  },
+  "retorno-a-buenos-aires": {
+    "title": "Retorno a Buenos Aires",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Marco Bechis.",
+    "award": "Veneza: Francesco Pasinetti de filme",
+    "why": "Para quem procura uma ficção ligada à memória política, aos direitos humanos e às marcas da violência na vida das pessoas.",
+    "url": "https://mostra.org/filmes/retorno-a-buenos-aires",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-25": 99,
+      "2026-10-28": 99,
+      "2026-10-22": 99
+    },
+    "default_priority": null
+  },
+  "patrulha-da-montanha": {
+    "title": "Patrulha da Montanha",
+    "tags": [
+      "Documentário",
+      "Experimental",
+      "Memória"
+    ],
+    "summary": "Operários protegem uma ferrovia da queda de pedras.",
+    "award": "Cópia restaurada · Projeto Pelechian",
+    "why": "Para quem se interessa pelo trabalho e pela relação com a natureza, observados nos gestos de operários que protegem uma ferrovia.",
+    "url": "https://mostra.org/filmes/patrulha-da-montanha",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "terra-do-povo": {
+    "title": "Terra do Povo",
+    "tags": [
+      "Documentário",
+      "Experimental",
+      "Memória"
+    ],
+    "summary": "Mãos, gestos e trabalho urbano.",
+    "award": "Cópia restaurada · Projeto Pelechian",
+    "why": "Para quem quer ver mãos, gestos e trabalho urbano se tornarem matéria de cinema pela montagem de Pelechian, em cópia restaurada.",
+    "url": "https://mostra.org/filmes/terra-do-povo",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "nos": {
+    "title": "Nós",
+    "tags": [
+      "Documentário",
+      "Experimental",
+      "Memória"
+    ],
+    "summary": "Identidade armênia e memória coletiva.",
+    "award": "Cópia restaurada · Projeto Pelechian",
+    "why": "Para quem busca uma experiência de cinema experimental ligada à identidade armênia e à construção de memória coletiva.",
+    "url": "https://mostra.org/filmes/nos",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "as-estacoes": {
+    "title": "As Estações",
+    "tags": [
+      "Documentário",
+      "Experimental",
+      "Memória"
+    ],
+    "summary": "Natureza e vida no ritmo das estações.",
+    "award": "Cópia restaurada · Projeto Pelechian",
+    "why": "Para quem se interessa por vida rural, natureza e ciclos do tempo, apresentados pelos ritmos de imagem e som de Pelechian.",
+    "url": "https://mostra.org/filmes/as-estacoes",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "a-garota-com-a-leica": {
+    "title": "A Garota com a Leica",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Alina Marazzi.",
+    "award": "Veneza: 1964 Pop Art; especial Pasinetti",
+    "why": "Para quem gosta de cinebiografias que aproximam fotografia, protagonismo feminino e história política.",
+    "url": "https://mostra.org/filmes/a-garota-com-a-leica",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-18": 99,
+      "2026-10-21": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "tribalistas-o-bau-da-hora-fertil": {
+    "title": "Tribalistas: O Baú da Hora Fértil",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Documentário de Dora Jobim.",
+    "award": "",
+    "why": "Para quem acompanha os Tribalistas ou quer explorar a memória de um encontro musical brasileiro em formato de documentário.",
+    "url": "https://mostra.org/filmes/tribalistas-o-bau-da-hora-fertil",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-29": 99
+    },
+    "default_priority": null
+  },
+  "nao-me-largue": {
+    "title": "Não Me Largue",
+    "tags": [
+      "Família",
+      "Relações"
+    ],
+    "summary": "Iris, de 11 anos, procura o pai ausente que voltou à cidade. A insistência da menina abre caminho para um vínculo frágil e imperfeito.",
+    "award": "Prêmio do público de ficção internacional · Sundance",
+    "why": "Para quem gosta de histórias de infância e reconciliação.",
+    "url": "https://mostra.org/filmes/nao-me-largue",
+    "days": {
+      "2026-10-24": 3,
+      "2026-10-21": 5,
+      "2026-10-15": 2,
+      "2026-10-16": 4
+    },
+    "default_priority": 8
+  },
+  "uma-familia": {
+    "title": "Uma Família",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Mees Peijnenburg.",
+    "award": "Berlim: menção do júri jovem em Geração 14plus",
+    "why": "Para quem procura conflitos familiares vistos em conexão com a juventude; recebeu menção do júri jovem da Geração 14plus em Berlim.",
+    "url": "https://mostra.org/filmes/uma-familia",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-23": 99,
+      "2026-10-21": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "o-ser-querido": {
+    "title": "O Ser Querido",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Rodrigo Sorogoyen.",
+    "award": "Cannes: citado na seleção; prêmio não informado",
+    "why": "Para quem se interessa pelo próprio universo do cinema e por suas relações com a família, sob a direção de Rodrigo Sorogoyen.",
+    "url": "https://mostra.org/filmes/o-ser-querido",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-25": 99,
+      "2026-10-21": 99
+    },
+    "default_priority": null
+  },
+  "o-sentido-da-vida": {
+    "title": "O Sentido da Vida",
+    "tags": [
+      "Família",
+      "Relações"
+    ],
+    "summary": "A diretora de uma casa de repouso tenta transformar o cuidado dos residentes. O encontro com uma dramaturga japonesa em estado terminal muda sua vida.",
+    "award": "Melhor atriz: Virginie Efira e Tao Okamoto · Cannes",
+    "why": "Cuidado e dignidade no fim da vida. Uma sessão de 3h16.",
+    "url": "https://mostra.org/filmes/o-sentido-da-vida",
+    "days": {
+      "2026-10-24": 2,
+      "2026-10-22": 3,
+      "2026-10-26": 2,
+      "2026-10-20": 2
+    },
+    "default_priority": 7
+  },
+  "aanikoobijigan-ancestral-bisavo-bisneto": {
+    "title": "Aanikoobijigan [Ancestral/ Bisavô/ Bisneto]",
+    "tags": [
+      "Documentário",
+      "Memória",
+      "Política"
+    ],
+    "summary": "Comunidades indígenas lutam para recuperar restos mortais de ancestrais mantidos em museus. História, espiritualidade e direito se encontram.",
+    "award": "Prêmio do público NEXT · Sundance",
+    "why": "Para discutir memória, acervos e a devolução de ancestrais às suas comunidades.",
+    "url": "https://mostra.org/filmes/aanikoobijigan-ancestral-bisavo-bisneto",
+    "days": {
+      "2026-10-24": 5,
+      "2026-10-29": 4,
+      "2026-10-26": 4,
+      "2026-10-27": 3
+    },
+    "default_priority": 10
+  },
+  "glaxo": {
+    "title": "Glaxo",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Benjamín Naishtat.",
+    "award": "",
+    "why": "Para quem gosta de adaptações literárias em que história, crime e violência se encontram, numa produção argentina com participação brasileira.",
+    "url": "https://mostra.org/filmes/glaxo",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "fernanda": {
+    "title": "Fernanda",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Sobre Fernanda Montenegro.",
+    "award": "",
+    "why": "Para quem quer conhecer a trajetória de Fernanda Montenegro em um documentário que aproxima cinema, família e memória.",
+    "url": "https://mostra.org/filmes/fernanda",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "la-libertad-doble": {
+    "title": "La Libertad Doble",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Lisandro Alonso.",
+    "award": "Cannes: citado na seleção; prêmio não informado",
+    "why": "Para quem quer acompanhar o cinema de Lisandro Alonso numa ficção que reúne família e questões sociais, selecionada em Cannes.",
+    "url": "https://mostra.org/filmes/la-libertad-doble",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-15": 99,
+      "2026-10-19": 99
+    },
+    "default_priority": null
+  },
+  "sonhos-do-rio": {
+    "title": "Sonhos do Rio",
+    "tags": [
+      "Documentário"
+    ],
+    "summary": "Documentário de Kristina Mikhailova.",
+    "award": "Berlim: júri ecumênico em Forum",
+    "why": "Para quem busca documentário sobre protagonismo feminino, identidade LGBTQIA+ e direitos humanos em um contexto ligado ao Cazaquistão.",
+    "url": "https://mostra.org/filmes/sonhos-do-rio",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-15": 99,
+      "2026-10-29": 99,
+      "2026-10-16": 99
+    },
+    "default_priority": null
+  },
+  "a-margem-do-rio": {
+    "title": "A Margem do Rio",
+    "tags": [
+      "Brasil",
+      "Relações"
+    ],
+    "summary": "Encontros secretos nos manguezais do Recife aproximam Izaquiel e um pescador. Uma ameaça leva os dois a um lugar onde realidade e mito se misturam.",
+    "award": "Prêmio Especial do Júri · Locarno",
+    "why": "Uma escolha brasileira sobre desejo, território e imaginação.",
+    "url": "https://mostra.org/filmes/a-margem-do-rio",
+    "days": {
+      "2026-10-24": 6,
+      "2026-10-23": 4
+    },
+    "default_priority": 9
+  },
+  "o-filho-da-puta": {
+    "title": "O Filho da Puta",
+    "tags": [
+      "Animação",
+      "Brasil"
+    ],
+    "summary": "Animação de Tania Anaya, Otto Guerra, Erica Maradona, Sávio Leite.",
+    "award": "",
+    "why": "Para quem quer explorar animação brasileira voltada a temas de família e identidade; o formato, por si só, não indica uma sessão infantil.",
+    "url": "https://mostra.org/filmes/o-filho-da-puta",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-22": 99
+    },
+    "default_priority": null
+  },
+  "pardo-e-papel": {
+    "title": "Pardo É Papel",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Documentário de Alexis Zelensky.",
+    "award": "",
+    "why": "Para quem se interessa por artes visuais e narrativas negras, reunidas em um documentário com produção brasileira, portuguesa e francesa.",
+    "url": "https://mostra.org/filmes/pardo-e-papel",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99
+    },
+    "default_priority": null
+  },
+  "a-paixao-segundo-g-h-b": {
+    "title": "A Paixão Segundo G.H.B.",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Gustavo Vinagre, Vinícius Couto.",
+    "award": "",
+    "why": "Para quem procura uma ficção brasileira centrada em experiências LGBTQIA+, corpo, desejo e sexualidade.",
+    "url": "https://mostra.org/filmes/a-paixao-segundo-g-h-b",
+    "days": {
+      "2026-10-24": 99,
+      "2026-10-28": 99
+    },
+    "default_priority": null
+  },
+  "minotauro": {
+    "title": "Minotauro",
+    "tags": [
+      "Política",
+      "Relações"
+    ],
+    "summary": "Na Rússia de 2022, um executivo enfrenta pressões empresariais e o colapso de sua vida pessoal, numa escalada de violência.",
+    "award": "Grande Prêmio do Júri · Cannes",
+    "why": "Para quem gosta de dramas sobre poder, intimidade e dilemas morais.",
+    "url": "https://mostra.org/filmes/minotauro",
+    "days": {
+      "2026-10-24": 1,
+      "2026-10-25": 2,
+      "2026-10-21": 2
+    },
+    "default_priority": 6
+  },
+  "a-casa-do-vento": {
+    "title": "A Casa do Vento",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Auguste Bernard Kouemo Yanghu.",
+    "award": "Veneza: Luigi de Laurentiis (estreia); especial do júri em Horizontes",
+    "why": "Para quem quer conhecer cinema ligado a Camarões, com família, migração e protagonismo feminino; venceu o prêmio de estreia de Veneza.",
+    "url": "https://mostra.org/filmes/a-casa-do-vento",
+    "days": {
+      "2026-10-23": 7,
+      "2026-10-15": 6,
+      "2026-10-16": 9
+    },
+    "default_priority": 12
+  },
+  "wolfram": {
+    "title": "Wolfram",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Warwick Thornton.",
+    "award": "Berlim: citado na seleção; prêmio não informado",
+    "why": "Para quem se interessa pela história australiana, por questões indígenas e pelas relações entre família, violência e direitos humanos.",
+    "url": "https://mostra.org/filmes/wolfram",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-18": 99,
+      "2026-10-28": 99,
+      "2026-10-15": 99
+    },
+    "default_priority": null
+  },
+  "o-intruso": {
+    "title": "O Intruso",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Louis Paxton.",
+    "award": "Sundance: NEXT Innovator",
+    "why": "Para quem gosta de histórias sobre família e identidade e usa a inovação como critério de descoberta: recebeu o NEXT Innovator em Sundance.",
+    "url": "https://mostra.org/filmes/o-intruso",
+    "days": {
+      "2026-10-23": 11,
+      "2026-10-18": 7,
+      "2026-10-15": 8
+    },
+    "default_priority": 16
+  },
+  "la-belle-annee": {
+    "title": "La Belle Année",
+    "tags": [
+      "Documentário",
+      "Premiados"
+    ],
+    "summary": "Documentário de Angelica Ruffier.",
+    "award": "Roterdã: especial do júri",
+    "why": "Para quem procura documentário com protagonismo feminino e temas LGBTQIA+, aproximando memória, relações e sexualidade.",
+    "url": "https://mostra.org/filmes/la-belle-annee",
+    "days": {
+      "2026-10-23": 10,
+      "2026-10-21": 11,
+      "2026-10-15": 7,
+      "2026-10-16": 99
+    },
+    "default_priority": 15
+  },
+  "deixem-nos-passar-caros-ancestrais": {
+    "title": "Deixem-nos Passar, Caros Ancestrais",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Lav Diaz.",
+    "award": "Veneza: Brian",
+    "why": "Para quem se interessa pelas Filipinas e pelo encontro entre história, religião, questões indígenas e violência política no cinema de Lav Diaz.",
+    "url": "https://mostra.org/filmes/deixem-nos-passar-caros-ancestrais",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-25": 99,
+      "2026-10-15": 99
+    },
+    "default_priority": null
+  },
+  "a-violencia-de-ninguem": {
+    "title": "A Violência de Ninguém",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Denis Côté.",
+    "award": "Locarno: segundo prêmio do júri jovem da competição; menção de atuação (Xavier Bergeron)",
+    "why": "Para quem quer explorar identidade e sexualidade em uma ficção de Denis Côté; a atuação de Xavier Bergeron recebeu menção em Locarno.",
+    "url": "https://mostra.org/filmes/a-violencia-de-ninguem",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-18": 99,
+      "2026-10-28": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "um-pouco-de-esperanca": {
+    "title": "Um Pouco de Esperança",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Ali Asgari.",
+    "award": "Veneza: citado na seleção; prêmio não informado",
+    "why": "Para quem procura uma ficção iraniana que aproxima família, direitos humanos e crises políticas contemporâneas.",
+    "url": "https://mostra.org/filmes/um-pouco-de-esperanca",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-28": 99,
+      "2026-10-29": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "biografia-de-jorge-luis-borges": {
+    "title": "Biografia de Jorge Luis Borges",
+    "tags": [
+      "Documentário"
+    ],
+    "summary": "Documentário de Mariano Llinás.",
+    "award": "Veneza: citado na seleção; prêmio não informado",
+    "why": "Para quem quer dedicar uma sessão extensa ao universo de Borges, aproximando literatura, memória e documentário no cinema de Mariano Llinás.",
+    "url": "https://mostra.org/filmes/biografia-de-jorge-luis-borges",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-28": 99,
+      "2026-10-22": 99,
+      "2026-10-19": 99
+    },
+    "default_priority": null
+  },
+  "a-odisseia-dos-dentes-de-leao": {
+    "title": "A Odisseia dos Dentes-de-leão",
+    "tags": [
+      "Animação",
+      "Natureza"
+    ],
+    "summary": "Quatro sementes sobrevivem à destruição da Terra e buscam um lugar onde possam germinar em um planeta desconhecido.",
+    "award": "Fipresci da Semana da Crítica · Cannes; Paul Grimault · Annecy",
+    "why": "Uma aventura pelo mundo vegetal, com sobrevivência e migração ambiental.",
+    "url": "https://mostra.org/filmes/a-odisseia-dos-dentes-de-leao",
+    "days": {
+      "2026-10-23": 2,
+      "2026-10-18": 1,
+      "2026-10-28": 2,
+      "2026-10-22": 1,
+      "2026-10-19": 2,
+      "2026-10-16": 1
+    },
+    "default_priority": 4
+  },
+  "vitoria-da-paz": {
+    "title": "Vitória da Paz",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Documentário de Ricardo Calil, Dudu Levy, Fábio Gusmão.",
+    "award": "",
+    "why": "Para quem busca documentário brasileiro que aproxima protagonismo feminino, narrativas negras, violência e direitos humanos.",
+    "url": "https://mostra.org/filmes/vitoria-da-paz",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "onde-repousar-meus-olhos": {
+    "title": "Onde Repousar Meus Olhos",
+    "tags": [
+      "Família",
+      "Cinema",
+      "Relações"
+    ],
+    "summary": "Uma mulher visita a mãe em Jeju depois de dez anos. Novidades, conselhos e atividades artísticas atravessam o reencontro familiar.",
+    "award": "Melhor direção e atuação, Kim Min-hee · Locarno",
+    "why": "Para quem gosta de encontros cotidianos e conversas familiares.",
+    "url": "https://mostra.org/filmes/onde-repousar-meus-olhos",
+    "days": {
+      "2026-10-23": 6,
+      "2026-10-21": 8,
+      "2026-10-15": 5,
+      "2026-10-16": 8
+    },
+    "default_priority": 11
+  },
+  "ze": {
+    "title": "Zé",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Sobre Zé Celso Martinez Corrêa.",
+    "award": "",
+    "why": "Para quem quer conhecer Zé Celso e as relações entre teatro, memória e história política brasileira.",
+    "url": "https://mostra.org/filmes/ze",
+    "days": {
+      "2026-10-23": 12,
+      "2026-10-29": 8,
+      "2026-10-27": 7
+    },
+    "default_priority": 17
+  },
+  "ate-la": {
+    "title": "Até Lá",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Sarah Leonor.",
+    "award": "Locarno: menção do júri jovem da competição",
+    "why": "Para quem prioriza questões ambientais na escolha de uma ficção; o filme de Sarah Leonor recebeu menção do júri jovem em Locarno.",
+    "url": "https://mostra.org/filmes/ate-la",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-15": 99,
+      "2026-10-19": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "ela-foi-ali-guardar-o-coracao-na-geladeira": {
+    "title": "Ela Foi Ali Guardar o Coração na Geladeira",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Cristiane Oliveira, Gustavo Galvão.",
+    "award": "",
+    "why": "Para quem se interessa por histórias brasileiras que articulam protagonismo feminino, família e memória política.",
+    "url": "https://mostra.org/filmes/ela-foi-ali-guardar-o-coracao-na-geladeira",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-28": 99
+    },
+    "default_priority": null
+  },
+  "o-homem-mais-solitario-da-cidade": {
+    "title": "O Homem Mais Solitário da Cidade",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Tizza Covi, Rainer Frimmel.",
+    "award": "Berlim: menção do Guild Film",
+    "why": "Para quem se interessa por memória e questões sociais e quer conhecer o trabalho da dupla Tizza Covi e Rainer Frimmel.",
+    "url": "https://mostra.org/filmes/o-homem-mais-solitario-da-cidade",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-25": 99,
+      "2026-10-21": 99,
+      "2026-10-19": 99
+    },
+    "default_priority": null
+  },
+  "look-back": {
+    "title": "Look Back",
+    "tags": [
+      "Cinema",
+      "Relações"
+    ],
+    "summary": "Duas garotas unidas pelo desenho passam 13 anos perseguindo o sonho de criar mangás.",
+    "award": "Signis, Cinema & Arts, CinemaSarà e Unimed · Veneza",
+    "why": "Para quem gosta de amizade, parceria criativa e amadurecimento.",
+    "url": "https://mostra.org/filmes/look-back",
+    "days": {
+      "2026-10-23": 1,
+      "2026-10-25": 4,
+      "2026-10-28": 1
+    },
+    "default_priority": 2
+  },
+  "100-dias": {
+    "title": "100 Dias",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Sobre Amyr Klink; bloco de biografias/documentários brasileiros.",
+    "award": "",
+    "why": "Para quem se interessa pela trajetória de Amyr Klink e por sua passagem para uma cinebiografia de ficção dirigida por Carlos Saldanha.",
+    "url": "https://mostra.org/filmes/100-dias",
+    "days": {
+      "2026-10-23": 99,
+      "2026-10-16": 99
+    },
+    "default_priority": null
+  },
+  "anymart": {
+    "title": "AnyMart",
+    "tags": [
+      "Política",
+      "Sobrenatural"
+    ],
+    "summary": "Depois do suicídio do gerente de uma loja de conveniência, uma presença estranha começa a aparecer no local.",
+    "award": "Prêmio da crítica / Fipresci em Forum · Berlim",
+    "why": "Trabalho e alienação encontram o sobrenatural. Tema sensível: suicídio.",
+    "url": "https://mostra.org/filmes/anymart",
+    "days": {
+      "2026-10-25": 9,
+      "2026-10-18": 4,
+      "2026-10-21": 9,
+      "2026-10-28": 8
+    },
+    "default_priority": 14
+  },
+  "o-fogo-que-voce-carrega": {
+    "title": "O Fogo que Você Carrega",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Edoardo De Angelis.",
+    "award": "Veneza: Francesco Pasinetti de atriz (Vanessa Scalera); BookCiak; Soundtrack Stars",
+    "why": "Para quem procura uma adaptação literária centrada na família; Vanessa Scalera recebeu o prêmio Pasinetti de atriz em Veneza.",
+    "url": "https://mostra.org/filmes/o-fogo-que-voce-carrega",
+    "days": {
+      "2026-10-25": 99,
+      "2026-10-22": 99,
+      "2026-10-29": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "yo-o-amor-e-um-passaro-rebelde": {
+    "title": "Yo (O Amor É um Pássaro Rebelde)",
+    "tags": [
+      "Documentário",
+      "Premiados"
+    ],
+    "summary": "Documentário de Anna Fitch, Banker White.",
+    "award": "Berlim: Urso de Prata de contribuição artística",
+    "why": "Para quem quer explorar memória, arte e relações afetivas em um documentário premiado com o Urso de Prata de contribuição artística.",
+    "url": "https://mostra.org/filmes/yo-o-amor-e-um-passaro-rebelde",
+    "days": {
+      "2026-10-25": 11,
+      "2026-10-28": 10,
+      "2026-10-22": 8,
+      "2026-10-16": 99
+    },
+    "default_priority": 16
+  },
+  "dora": {
+    "title": "Dora",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de July Jung.",
+    "award": "Cannes: citado na seleção; prêmio não informado",
+    "why": "Para quem se interessa por juventude, relações familiares e experiências LGBTQIA+ numa ficção sul-coreana com protagonismo feminino.",
+    "url": "https://mostra.org/filmes/dora",
+    "days": {
+      "2026-10-25": 99,
+      "2026-10-21": 99,
+      "2026-10-29": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "na-terra-de-arto": {
+    "title": "Na Terra de Arto",
+    "tags": [
+      "Memória",
+      "Relações"
+    ],
+    "summary": "Uma francesa viaja à Armênia após a morte do marido e descobre mentiras sobre sua identidade e seu envolvimento em uma guerra.",
+    "award": "",
+    "why": "Uma investigação íntima sobre luto, identidade e passado oculto.",
+    "url": "https://mostra.org/filmes/na-terra-de-arto",
+    "days": {
+      "2026-10-25": 8,
+      "2026-10-28": 7,
+      "2026-10-29": 7,
+      "2026-10-27": 5
+    },
+    "default_priority": 13
+  },
+  "ha-chan-de-volta-a-danca": {
+    "title": "Ha-Chan: De Volta À Dança!",
+    "tags": [
+      "Música",
+      "Relações"
+    ],
+    "summary": "Após uma tragédia, uma dançarina de salão em Tóquio se isola. Ao voltar ao estúdio, sente atração pelo novo instrutor.",
+    "award": "Melhor direção de ficção norte-americana · Sundance",
+    "why": "Para quem se interessa por dança e reconstrução afetiva.",
+    "url": "https://mostra.org/filmes/ha-chan-de-volta-a-danca",
+    "days": {
+      "2026-10-25": 7,
+      "2026-10-18": 3,
+      "2026-10-29": 6,
+      "2026-10-27": 4
+    },
+    "default_priority": 12
+  },
+  "um-dia-na-vida-de-jo-capitulo-fedra": {
+    "title": "Um Dia na Vida de Jo: Capítulo Fedra",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Jacqueline Lentzou.",
+    "award": "Veneza: direção em Horizontes",
+    "why": "Para quem se interessa por conflitos entre juventude, família e violência; a direção de Jacqueline Lentzou foi premiada em Horizontes, em Veneza.",
+    "url": "https://mostra.org/filmes/um-dia-na-vida-de-jo-capitulo-fedra",
+    "days": {
+      "2026-10-25": 99,
+      "2026-10-26": 99,
+      "2026-10-16": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "iron-boy": {
+    "title": "Iron Boy",
+    "tags": [
+      "Animação",
+      "Música",
+      "Família"
+    ],
+    "summary": "Um garoto da zona rural francesa precisa usar um colete de ferro. Longe da fazenda, descobre a música e uma nova amizade.",
+    "award": "Especial do júri em Um Certo Olhar · Cannes; filme do júri e do público · Annecy",
+    "why": "Corpo, autonomia e expectativas familiares em uma animação de amadurecimento.",
+    "url": "https://mostra.org/filmes/iron-boy",
+    "days": {
+      "2026-10-25": 6,
+      "2026-10-21": 7,
+      "2026-10-29": 5,
+      "2026-10-16": 7
+    },
+    "default_priority": 11
+  },
+  "quem-matou-alex-odeh": {
+    "title": "Quem Matou Alex Odeh?",
+    "tags": [
+      "Documentário",
+      "Premiados"
+    ],
+    "summary": "Documentário de Jason Osder, William Lafi Youmans.",
+    "award": "Sundance: especial do júri de excelência jornalística em documentário norte-americano",
+    "why": "Para quem procura investigação documental com dimensão política e de direitos humanos; recebeu o prêmio de excelência jornalística em Sundance.",
+    "url": "https://mostra.org/filmes/quem-matou-alex-odeh",
+    "days": {
+      "2026-10-25": 12,
+      "2026-10-18": 8,
+      "2026-10-19": 4,
+      "2026-10-20": 8
+    },
+    "default_priority": 17
+  },
+  "o-samurai-e-o-prisioneiro": {
+    "title": "O Samurai e o Prisioneiro",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Kiyoshi Kurosawa.",
+    "award": "Cannes: citado na seleção; prêmio não informado",
+    "why": "Para quem busca uma ficção histórica japonesa e quer acompanhar Kiyoshi Kurosawa nesse universo.",
+    "url": "https://mostra.org/filmes/o-samurai-e-o-prisioneiro",
+    "days": {
+      "2026-10-25": 99,
+      "2026-10-28": 99,
+      "2026-10-15": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "aqui-nao-e-o-seu-lugar": {
+    "title": "Aqui Não É o Seu Lugar",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Florin Șerban.",
+    "award": "Locarno: Leopardo de Ouro; Europa Cinemas Label; júri jovem da competição; menção de atuação (Teodor Butănescu)",
+    "why": "Para quem quer combinar descoberta de festival e temas sociais: o Leopardo de Ouro de Locarno aborda família, juventude e violência.",
+    "url": "https://mostra.org/filmes/aqui-nao-e-o-seu-lugar",
+    "days": {
+      "2026-10-25": 10,
+      "2026-10-18": 6,
+      "2026-10-22": 7,
+      "2026-10-20": 6
+    },
+    "default_priority": 15
+  },
+  "amor-possivel": {
+    "title": "Amor Possível",
+    "tags": [
+      "Relações",
+      "Política"
+    ],
+    "summary": "Uma família em dificuldades se aproxima de uma documentarista e seu marido abastado. O convívio entre os casais expõe desejo e tensões de classe.",
+    "award": "Leão de Prata / Grande Prêmio do Júri e Fipresci · Veneza",
+    "why": "Uma escolha para explorar casamento, dinheiro e desejo. Sessão de 2h44.",
+    "url": "https://mostra.org/filmes/amor-possivel",
+    "days": {
+      "2026-10-25": 3,
+      "2026-10-21": 4,
+      "2026-10-29": 3,
+      "2026-10-26": 3
+    },
+    "default_priority": 8
+  },
+  "mulher-desconhecida": {
+    "title": "Mulher Desconhecida",
+    "tags": [
+      "Memória",
+      "Relações",
+      "Política"
+    ],
+    "summary": "No pós-guerra, uma empregada prestes a casar com seu patrão teme que um relacionamento passado com um soldado alemão destrua sua nova posição.",
+    "award": "Leão de Ouro e Coppa Volpi de melhor atriz · Veneza",
+    "why": "Para quem gosta de segredos pessoais e relações de classe em contexto histórico.",
+    "url": "https://mostra.org/filmes/mulher-desconhecida",
+    "days": {
+      "2026-10-25": 1,
+      "2026-10-21": 3,
+      "2026-10-28": 3,
+      "2026-10-27": 1
+    },
+    "default_priority": 6
+  },
+  "cacada-humana": {
+    "title": "Caçada Humana",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Wayne Wapeemukwa.",
+    "award": "Locarno: terceiro prêmio do júri jovem da competição",
+    "why": "Para quem procura uma ficção canadense em que juventude, questões indígenas, tecnologia e violência se cruzam.",
+    "url": "https://mostra.org/filmes/cacada-humana",
+    "days": {
+      "2026-10-25": 99,
+      "2026-10-18": 99,
+      "2026-10-26": 99,
+      "2026-10-16": 99
+    },
+    "default_priority": null
+  },
+  "nao-sou-um-heroi": {
+    "title": "Não Sou um Herói",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Rima Das.",
+    "award": "Berlim: menção do Urso de Cristal em Geração Kplus",
+    "why": "Para quem se interessa por juventude, família e identidade no cinema de Rima Das; recebeu menção na Geração Kplus de Berlim.",
+    "url": "https://mostra.org/filmes/nao-sou-um-heroi",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-21": 99,
+      "2026-10-29": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "variacoes-sobre-um-tema": {
+    "title": "Variações sobre um Tema",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Uma pastora de cabras sul-africana cai num golpe de falsas reparações e espera pelo dinheiro. Seu aniversário de 80 anos traz novos conflitos em torno da independência.",
+    "award": "Roterdã: Tigre de filme",
+    "why": "Para quem gosta de experimentação e repetição e quer pensar a autonomia na velhice; venceu o Tigre de filme em Roterdã.",
+    "url": "https://mostra.org/filmes/variacoes-sobre-um-tema",
+    "days": {
+      "2026-10-18": 10,
+      "2026-10-28": 11,
+      "2026-10-19": 6,
+      "2026-10-16": 99
+    },
+    "default_priority": 36
+  },
+  "rehearsals-for-a-revolution": {
+    "title": "Rehearsals for a Revolution",
+    "tags": [
+      "Documentário",
+      "Premiados"
+    ],
+    "summary": "Cinco retratos de parentes e mentores articulam imagens domésticas, registros de protestos e vozes para reconstruir décadas de repressão e resistência no Irã.",
+    "award": "Cannes: Olho de Ouro de documentário",
+    "why": "Para quem prefere compreender a história política do Irã por arquivos familiares e memórias pessoais; venceu o Olho de Ouro de documentário em Cannes.",
+    "url": "https://mostra.org/filmes/rehearsals-for-a-revolution",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-22": 99,
+      "2026-10-29": 11,
+      "2026-10-16": 99
+    },
+    "default_priority": 47
+  },
+  "homem-ao-mar": {
+    "title": "Homem ao Mar",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Gael Garcia Bernal.",
+    "award": "Veneza: citado na seleção; prêmio não informado",
+    "why": "Para quem quer acompanhar Gael García Bernal como diretor numa ficção mexicana que aproxima migração, família e violência.",
+    "url": "https://mostra.org/filmes/homem-ao-mar",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-28": 99,
+      "2026-10-29": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "eu-raramente-acordo-sonhando": {
+    "title": "Eu Raramente Acordo Sonhando",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Isabelle Stever.",
+    "award": "Locarno: prêmio ambiental do júri jovem",
+    "why": "Para quem procura uma ficção com temas LGBTQIA+, identidade e relações afetivas atravessadas por crises políticas contemporâneas.",
+    "url": "https://mostra.org/filmes/eu-raramente-acordo-sonhando",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-21": 99,
+      "2026-10-16": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "a-terra-do-meu-pai": {
+    "title": "A Terra do Meu Pai",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Em 1949, o escritor e sua filha atravessam uma Alemanha dividida, após anos de exílio, confrontando as ruínas do país e as feridas familiares.",
+    "award": "Cannes: direção",
+    "why": "Para quem se interessa por Thomas Mann e por histórias em que literatura, exílio e feridas familiares se encontram no pós-guerra.",
+    "url": "https://mostra.org/filmes/a-terra-do-meu-pai",
+    "days": {
+      "2026-10-18": 11,
+      "2026-10-19": 7,
+      "2026-10-20": 11
+    },
+    "default_priority": 44
+  },
+  "clarissa": {
+    "title": "Clarissa",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Arie Esiri, Chuko Esiri.",
+    "award": "Cannes: citado na seleção; prêmio não informado",
+    "why": "Para quem quer conhecer uma adaptação ligada à Nigéria que reúne protagonismo feminino, narrativas negras, memória e identidade.",
+    "url": "https://mostra.org/filmes/clarissa",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-16": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "cavalcanti": {
+    "title": "Cavalcanti",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Sobre Alberto Cavalcanti.",
+    "award": "",
+    "why": "Para quem quer ampliar o repertório de história do cinema e conhecer Alberto Cavalcanti por meio de um documentário brasileiro.",
+    "url": "https://mostra.org/filmes/cavalcanti",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-26": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "se-nao-eu-quem-vai-fazer-voce-feliz": {
+    "title": "Se Não Eu, Quem Vai Fazer Você Feliz?",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Sobre Chorão.",
+    "award": "",
+    "why": "Para quem acompanha a música de Chorão e quer conhecer uma cinebiografia de ficção sobre sua trajetória e relações.",
+    "url": "https://mostra.org/filmes/se-nao-eu-quem-vai-fazer-voce-feliz",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "os-dias-livres": {
+    "title": "Os Dias Livres",
+    "tags": [
+      "Ficção",
+      "Brasil",
+      "Premiados"
+    ],
+    "summary": "Ficção de Lucila Mariani.",
+    "award": "Locarno: menção em Cineastas do Presente",
+    "why": "Para quem se interessa pelo encontro entre juventude, tecnologia e relações familiares, numa ficção com protagonismo feminino.",
+    "url": "https://mostra.org/filmes/os-dias-livres",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-29": 99,
+      "2026-10-19": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "zoom-in-zoom-out": {
+    "title": "Zoom In, Zoom Out",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Dong Jie.",
+    "award": "Veneza: Verona Club de inovação, Semana da Crítica",
+    "why": "Para quem quer explorar memória e tecnologia no cinema chinês; o filme recebeu o prêmio Verona Club de inovação em Veneza.",
+    "url": "https://mostra.org/filmes/zoom-in-zoom-out",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-21": 99,
+      "2026-10-16": 99
+    },
+    "default_priority": null
+  },
+  "cronicas-do-cerco": {
+    "title": "Crônicas do Cerco",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Diferentes personagens tentam preservar amizade, intimidade e vida num território sitiado. A experiência do diretor em Yarmouk inspira a narrativa.",
+    "award": "Berlim: estreia em Perspectivas",
+    "why": "Para quem quer olhar para a vida palestina sob cerco pela amizade, pela intimidade e pelas tentativas de preservar o cotidiano.",
+    "url": "https://mostra.org/filmes/cronicas-do-cerco",
+    "days": {
+      "2026-10-18": 12,
+      "2026-10-15": 9,
+      "2026-10-20": 12,
+      "2026-10-27": 9
+    },
+    "default_priority": 46
+  },
+  "filipinana": {
+    "title": "Filipiñana",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Uma funcionária de 17 anos, vinda do interior, conhece a ostentação de um clube de campo perto de Manila e as relações entre seus sócios e trabalhadores.",
+    "award": "Sundance: especial do júri de visão criativa em ficção internacional",
+    "why": "Para quem gosta de histórias sobre classe e trabalho vistas por uma jovem; a rotina de um clube de campo expõe relações de privilégio.",
+    "url": "https://mostra.org/filmes/filipinana",
+    "days": {
+      "2026-10-18": 9,
+      "2026-10-22": 9,
+      "2026-10-29": 9,
+      "2026-10-19": 5
+    },
+    "default_priority": 34
+  },
+  "revolucionarias-nunca-morrem": {
+    "title": "Revolucionárias Nunca Morrem",
+    "tags": [
+      "Documentário",
+      "Premiados"
+    ],
+    "summary": "Documentário de Mohanad Yaqubi.",
+    "award": "Locarno: especial do júri CINE+OCS em Cineastas do Presente",
+    "why": "Para quem se interessa por documentário palestino e pelas relações entre cinema, memória e crises contemporâneas.",
+    "url": "https://mostra.org/filmes/revolucionarias-nunca-morrem",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-28": 99,
+      "2026-10-22": 99,
+      "2026-10-16": 99
+    },
+    "default_priority": null
+  },
+  "se-eu-fosse-vivo-vivia": {
+    "title": "Se Eu Fosse Vivo... Vivia",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de André Novais Oliveira.",
+    "award": "Berlim: citado na seleção; prêmio não informado",
+    "why": "Para quem acompanha André Novais Oliveira e busca narrativas negras brasileiras sobre família, memória e relações afetivas.",
+    "url": "https://mostra.org/filmes/se-eu-fosse-vivo-vivia",
+    "days": {
+      "2026-10-18": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "master": {
+    "title": "Master",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Rezwan Shahriar Sumit.",
+    "award": "Roterdã: Grande Tela (E); “Brig Screen Award” (F)",
+    "why": "Para quem quer conhecer cinema de Bangladesh e se interessa pela aproximação entre família, política, desigualdade e crime.",
+    "url": "https://mostra.org/filmes/master",
+    "days": {
+      "2026-10-21": 99,
+      "2026-10-15": 99,
+      "2026-10-26": 99,
+      "2026-10-16": 99
+    },
+    "default_priority": null
+  },
+  "a-cor-do-sol": {
+    "title": "A Cor do Sol",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Xavier Tera.",
+    "award": "Veneza: Fipresci em Horizontes",
+    "why": "Para quem procura histórias de juventude, identidade e sexualidade com temas LGBTQIA+; recebeu o prêmio da crítica em Horizontes, em Veneza.",
+    "url": "https://mostra.org/filmes/a-cor-do-sol",
+    "days": {
+      "2026-10-21": 99,
+      "2026-10-22": 99,
+      "2026-10-26": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "eklipse": {
+    "title": "Eklipse",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de Manuel Wetscher.",
+    "award": "Veneza: menção de fotografia em Autores Abaixo de 40",
+    "why": "Para quem se interessa por juventude, relações familiares e temas LGBTQIA+; a fotografia recebeu menção em Veneza.",
+    "url": "https://mostra.org/filmes/eklipse",
+    "days": {
+      "2026-10-21": 99,
+      "2026-10-15": 99,
+      "2026-10-22": 99,
+      "2026-10-16": 99
+    },
+    "default_priority": null
+  },
+  "feito-pipa": {
+    "title": "Feito Pipa",
+    "tags": [
+      "Ficção",
+      "Brasil",
+      "Premiados"
+    ],
+    "summary": "Gugu, apaixonado por futebol, é criado com liberdade pela avó. A relação difícil com o pai e as ruínas reveladas pela seca atravessam a história da família.",
+    "award": "Berlim: Urso de Cristal; Grande Prêmio do Júri em Geração Kplus",
+    "why": "Para quem busca cinema brasileiro sobre infância e afeto entre gerações, com uma avó que acolhe a liberdade do neto.",
+    "url": "https://mostra.org/filmes/feito-pipa",
+    "days": {
+      "2026-10-21": 1,
+      "2026-10-29": 1
+    },
+    "default_priority": 3
+  },
+  "london": {
+    "title": "London",
+    "tags": [
+      "Ficção",
+      "Brasil",
+      "Premiados"
+    ],
+    "summary": "Ficção de Victor Di Marco, Márcio Picoli.",
+    "award": "Veneza: Leão Queer",
+    "why": "Para quem procura cinema brasileiro sobre identidade LGBTQIA+, corpo e desejo; o filme recebeu o Leão Queer em Veneza.",
+    "url": "https://mostra.org/filmes/london",
+    "days": {
+      "2026-10-21": 99,
+      "2026-10-29": 99
+    },
+    "default_priority": null
+  },
+  "alucinacao": {
+    "title": "Alucinação",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Sobre Belchior.",
+    "award": "",
+    "why": "Para quem acompanha Belchior e quer explorar sua trajetória musical em relação à memória e à história política brasileira.",
+    "url": "https://mostra.org/filmes/alucinacao",
+    "days": {
+      "2026-10-28": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "medley": {
+    "title": "Medley",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Ana Luiza Azevedo.",
+    "award": "",
+    "why": "Para quem gosta de adaptações literárias com protagonismo feminino e temas de juventude, família, memória e corpo.",
+    "url": "https://mostra.org/filmes/medley",
+    "days": {
+      "2026-10-28": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "coracao-de-lona": {
+    "title": "Coração de Lona",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Tuca Siqueira.",
+    "award": "",
+    "why": "Para quem se interessa por uma ficção brasileira que aproxima protagonismo feminino, arte, corpo e relações familiares.",
+    "url": "https://mostra.org/filmes/coracao-de-lona",
+    "days": {
+      "2026-10-28": 99,
+      "2026-10-29": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "as-vezes-sinto-tristeza-outras-vezes-revolta": {
+    "title": "Às Vezes Sinto Tristeza, Outras Vezes Revolta",
+    "tags": [
+      "Documentário, Ficção",
+      "Premiados"
+    ],
+    "summary": "Documentário, Ficção de María Aparicio.",
+    "award": "Veneza: direção na Jornada dos Autores; Autores Abaixo de 40",
+    "why": "Para quem quer explorar o encontro entre documentário e ficção, com migração, protagonismo feminino e questões sociais.",
+    "url": "https://mostra.org/filmes/s-vezes-sinto-tristeza-outras-vezes-revolta",
+    "days": {
+      "2026-10-28": 99,
+      "2026-10-29": 99,
+      "2026-10-16": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "elza": {
+    "title": "Elza",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Sobre Elza Soares.",
+    "award": "",
+    "why": "Para quem quer conhecer Elza Soares por um documentário ligado à música, à memória e às narrativas negras brasileiras.",
+    "url": "https://mostra.org/filmes/elza",
+    "days": {
+      "2026-10-28": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "a-aventura-sonhada": {
+    "title": "A Aventura Sonhada",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Uma arqueóloga numa cidade búlgara ajuda um conhecido cujo carro foi roubado e acaba se aproximando das redes criminosas locais e de questões do próprio passado.",
+    "award": "Cannes: Prêmio do Júri",
+    "why": "Para quem gosta de investigar um território junto com o passado de uma personagem, numa história de arqueologia e aproximação com redes criminosas.",
+    "url": "https://mostra.org/filmes/a-aventura-sonhada",
+    "days": {
+      "2026-10-28": 99,
+      "2026-10-16": 99,
+      "2026-10-20": 10
+    },
+    "default_priority": 40
+  },
+  "roqia": {
+    "title": "Roqia",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Um homem com amnésia volta à família e encontra presenças inquietantes. Em outro tempo, um exorcista idoso com Alzheimer e seu discípulo enfrentam sinais de um mal ancestral.",
+    "award": "",
+    "why": "Para quem busca horror ligado à memória e à religião: amnésia, Alzheimer e exorcismo atravessam a premissa argelina.",
+    "url": "https://mostra.org/filmes/roqia",
+    "days": {
+      "2026-10-28": 99,
+      "2026-10-22": 12,
+      "2026-10-16": 99,
+      "2026-10-27": 8
+    },
+    "default_priority": 42
+  },
+  "o-ultimo-batedor-de-carteiras": {
+    "title": "O Último Batedor de Carteiras",
+    "tags": [
+      "Ficção"
+    ],
+    "summary": "Ficção de Noah Segan.",
+    "award": "",
+    "why": "Para quem gosta de histórias que aproximam crime e família e quer conhecer a ficção de Noah Segan apresentada em Sundance.",
+    "url": "https://mostra.org/filmes/o-ultimo-batedor-de-carteiras",
+    "days": {
+      "2026-10-15": 99,
+      "2026-10-29": 99,
+      "2026-10-19": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "american-doctor": {
+    "title": "American Doctor",
+    "tags": [
+      "Documentário"
+    ],
+    "summary": "Documentário de Poh Si Teng.",
+    "award": "",
+    "why": "Para quem procura documentário sobre saúde e corpo atravessados por violência, crises políticas e direitos humanos, com participação palestina na produção.",
+    "url": "https://mostra.org/filmes/american-doctor",
+    "days": {
+      "2026-10-15": 99,
+      "2026-10-19": 99,
+      "2026-10-16": 99,
+      "2026-10-20": 99
+    },
+    "default_priority": null
+  },
+  "tigre-de-papel": {
+    "title": "Tigre de Papel",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Ficção de James Gray.",
+    "award": "—",
+    "why": "Para quem acompanha James Gray e se interessa pelo encontro entre família e crime no cinema norte-americano.",
+    "url": "https://mostra.org/filmes/tigre-de-papel",
+    "days": {
+      "2026-10-15": 99,
+      "2026-10-16": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "fiz-um-foguete-imaginando-que-voce-vinha": {
+    "title": "Fiz um Foguete Imaginando que Você Vinha",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Janaína Marques.",
+    "award": "Berlim: citado na seleção; prêmio não informado",
+    "why": "Para quem quer descobrir uma ficção brasileira com protagonismo feminino e temas de família, memória e corpo.",
+    "url": "https://mostra.org/filmes/fiz-um-foguete-imaginando-que-voce-vinha",
+    "days": {
+      "2026-10-15": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "quem-matou-narciso": {
+    "title": "Quem Matou Narciso?",
+    "tags": [
+      "Ficção",
+      "Brasil",
+      "Premiados"
+    ],
+    "summary": "No Paraguai de 1958, um artista vindo de Buenos Aires vira fenômeno do rádio e símbolo de liberdade. Sua morte ocorre num país onde medo e silêncio dificultam conhecer a verdade.",
+    "award": "Berlim: crítica / Fipresci em Panorama",
+    "why": "Para quem gosta de mistério, música e política latino-americana: a morte de um astro do rádio expõe o medo e o silêncio no Paraguai de 1958.",
+    "url": "https://mostra.org/filmes/quem-matou-narciso",
+    "days": {
+      "2026-10-15": 1,
+      "2026-10-22": 2
+    },
+    "default_priority": 5
+  },
+  "yellow-cake": {
+    "title": "Yellow Cake",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Tiago Melo.",
+    "award": "",
+    "why": "Para quem quer uma ficção brasileira que coloque ciência, tecnologia e questões ambientais entre os assuntos da sessão.",
+    "url": "https://mostra.org/filmes/yellow-cake",
+    "days": {
+      "2026-10-22": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "jardim-dos-silencios": {
+    "title": "Jardim dos Silêncios",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Henrique Dantas.",
+    "award": "",
+    "why": "Para quem se interessa pelo encontro entre história, memória familiar e narrativas negras numa ficção com produção brasileira e italiana.",
+    "url": "https://mostra.org/filmes/jardim-dos-silencios",
+    "days": {
+      "2026-10-22": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "cansei-de-ser-gala": {
+    "title": "Cansei de Ser Galã",
+    "tags": [
+      "Documentário",
+      "Brasil"
+    ],
+    "summary": "Sobre Claudio Marzo.",
+    "award": "",
+    "why": "Para quem quer conhecer a trajetória de Claudio Marzo e pensar a relação entre carreira no cinema, identidade e memória.",
+    "url": "https://mostra.org/filmes/cansei-de-ser-gala",
+    "days": {
+      "2026-10-22": 99,
+      "2026-10-29": 99
+    },
+    "default_priority": null
+  },
+  "furies": {
+    "title": "Furies",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "No Líbano, o congelamento das contas impede uma mulher de pagar uma cirurgia para a irmã. As duas organizam um assalto para recuperar suas próprias economias.",
+    "award": "",
+    "why": "Para quem gosta de filmes de assalto com motivação social: duas irmãs tentam recuperar as próprias economias num banco do Líbano para pagar uma cirurgia.",
+    "url": "https://mostra.org/filmes/furies",
+    "days": {
+      "2026-10-22": 10,
+      "2026-10-26": 7
+    },
+    "default_priority": 39
+  },
+  "musk": {
+    "title": "Musk",
+    "tags": [
+      "Documentário"
+    ],
+    "summary": "Documentário de Alex Gibney.",
+    "award": "Veneza: citado na seleção; prêmio não informado",
+    "why": "Para quem quer discutir as relações entre tecnologia, poder político e sociedade por meio de um documentário de Alex Gibney sobre Elon Musk.",
+    "url": "https://mostra.org/filmes/musk",
+    "days": {
+      "2026-10-29": 99,
+      "2026-10-19": 99,
+      "2026-10-26": 99
+    },
+    "default_priority": null
+  },
+  "elefantes-na-nevoa": {
+    "title": "Elefantes na Névoa",
+    "tags": [
+      "Ficção",
+      "Brasil",
+      "Premiados"
+    ],
+    "summary": "Numa vila nepalesa ameaçada por elefantes, a líder de uma família de mulheres trans tenta conciliar um amor secreto e a responsabilidade pelo grupo. O desaparecimento da mais jovem expõe essas tensões.",
+    "award": "Cannes: júri em Um Certo Olhar",
+    "why": "Para quem busca histórias sobre famílias formadas por mulheres trans em outros contextos culturais, com afeto, responsabilidade e pertencimento no Nepal.",
+    "url": "https://mostra.org/filmes/elefantes-na-nevoa",
+    "days": {
+      "2026-10-29": 10,
+      "2026-10-26": 6
+    },
+    "default_priority": 35
+  },
+  "seis-meses-no-predio-rosa-e-azul": {
+    "title": "Seis Meses no Prédio Rosa e Azul",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Bruno Santamaría Razo.",
+    "award": "",
+    "why": "Para quem se interessa por juventude, memória familiar e identidade LGBTQIA+ numa ficção mexicana com participação brasileira.",
+    "url": "https://mostra.org/filmes/seis-meses-no-predio-rosa-e-azul",
+    "days": {
+      "2026-10-29": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  },
+  "fjord": {
+    "title": "Fjord",
+    "tags": [
+      "Ficção",
+      "Premiados"
+    ],
+    "summary": "Duas famílias vizinhas, com maneiras diferentes de criar os filhos, se aproximam num fiorde. Marcas no corpo de uma adolescente fazem a comunidade questionar sua educação doméstica.",
+    "award": "Cannes: Palma de Ouro; crítica internacional / Fipresci",
+    "why": "Para quem gosta de dilemas éticos sobre educação, religião e autoridade dos pais; suspeitas de violência contra uma adolescente movem o conflito.",
+    "url": "https://mostra.org/filmes/fjord",
+    "days": {
+      "2026-10-19": 1,
+      "2026-10-26": 1
+    },
+    "default_priority": 1
+  },
+  "la-perra": {
+    "title": "La Perra",
+    "tags": [
+      "Ficção",
+      "Brasil"
+    ],
+    "summary": "Ficção de Dominga Sotomayor.",
+    "award": "Cannes: citado na seleção; prêmio não informado",
+    "why": "Para quem procura uma adaptação literária com protagonismo feminino e temas de memória, no cinema da chilena Dominga Sotomayor.",
+    "url": "https://mostra.org/filmes/la-perra",
+    "days": {
+      "2026-10-20": 99,
+      "2026-10-27": 99
+    },
+    "default_priority": null
+  }
+}
