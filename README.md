@@ -2,6 +2,8 @@
 
 [Acesse o guia interativo](https://ecdyzone.github.io/mostra_cinema_sp_interativa/) para escolher e combinar sessões da [50ª Mostra de Cinema de São Paulo](https://mostra.org/), de **15 a 29 de outubro de 2026**. A página reúne horários, duração, cinemas, links oficiais e motivos para assistir aos filmes da curadoria.
 
+**Site independente e não oficial.** Este site não tem nenhum vínculo com a Mostra de Cinema de São Paulo nem com sua organização. A Mostra e sua organização não têm responsabilidade pelo conteúdo, por eventuais erros ou por problemas decorrentes do uso deste site.
+
 A **curadoria é a visualização padrão**, com 131 títulos e 428 opções de sessão. O botão **Toda a programação** amplia a lista para as 1.373 opções das grades presenciais disponíveis. Os curtas de Pelechian são agrupados em programas: essas opções correspondem, respectivamente, a 446 e 1.391 registros individuais de filmes. Os números refletem a programação salva no projeto.
 
 ## Usar e compartilhar
