@@ -11,15 +11,16 @@ class El{
  constructor(){this.value='';this.hidden=false;this.attrs={};this.listeners={};this.firstElementChild={textContent:''};this.dataset={};this.children=[];}
  setAttribute(k,v){this.attrs[k]=v}addEventListener(k,fn){this.listeners[k]=fn}appendChild(el){this.children=this.children.filter(c=>c!==el);this.children.push(el)}replaceChildren(){this.children=[]}querySelector(){return this.button}click(){this.clicked=true}focus(){this.focused=true}remove(){}
 }
-function setup(storage={},search=''){
- const ids=['search','theme','sort','day','date-label','intro','scope','featured','favorites','export-menu','export-toggle','download','calendar','download-all','calendar-all','print','filmes','count','empty','status'];
+function setup(storage={},search='',options={}){
+ const ids=['search','theme','sort','day','date-label','intro','scope','featured','favorites','export-menu','export-toggle','download','calendar','download-all','calendar-all','print','filmes','count','empty','status','import-menu','import-toggle','import-txt','import-file','recover-old','recover-retry'];
  for(const id of ids)assert.ok(html.includes('id="'+id+'"'), 'Elemento ausente: '+id);
  const els=Object.fromEntries(ids.map(id=>[id,new El()]));els.sort.value='curadoria';
  const cards=films.map(f=>{const c=new El();c.dataset.id=f.id;c.button=new El();c.button.dataset.favorite=f.id;return c});
  let exported;
- const context={document:{addEventListener(){},getElementById:id=>els[id],querySelectorAll:()=>cards,createElement:()=>new El(),body:new El()},localStorage:{getItem:key=>storage[key]??null,setItem:(key,value)=>storage[key]=value},Blob,TextEncoder,URL:Object.assign(URL,{createObjectURL:blob=>{exported=blob;return 'blob:test'},revokeObjectURL(){}}),URLSearchParams,setTimeout:fn=>fn(),window:{location:{search,href:'https://example.com/'+search},history:{replaceState(){}},print(){}}};
- vm.createContext(context);vm.runInContext(code,context);
- return {els,cards,storage,exported:()=>exported,filename:()=>context.document.body.children.at(-1)?.download,calendarFor:selected=>context.buildCalendar(selected),visible:()=>cards.filter(c=>!c.hidden),changeDay(day){els.day.value=day;els.day.listeners.change()},choose(f){const button=cards.find(c=>c.dataset.id===f.id).button;els.filmes.listeners.click({target:{closest:()=>button}})}};
+ const url=new URL(options.href||'https://example.com/'+search);let navigation;
+ const context={document:{addEventListener(){},getElementById:id=>els[id],querySelectorAll:()=>cards,createElement:()=>new El(),body:new El()},localStorage:{getItem:key=>{if(options.readError)throw Error('blocked');return storage[key]??null},setItem:(key,value)=>{if(options.writeError)throw Error('blocked');storage[key]=value}},Blob,TextEncoder,URL:Object.assign(URL,{createObjectURL:blob=>{exported=blob;return 'blob:test'},revokeObjectURL(){}}),URLSearchParams,setTimeout:fn=>fn(),window:{location:{search:url.search,href:url.href,origin:url.origin,assign:href=>{navigation=href}},history:{replaceState(_state,_title,href){context.window.location.href=String(href)}},print(){}}};
+ vm.createContext(context);vm.runInContext(options.auto?code.replace('const AUTO_RECOVER_FAVORITES = false;','const AUTO_RECOVER_FAVORITES = true;'):code,context);
+ return {els,cards,storage,context,navigation:()=>navigation,async importText(text){els['import-file'].files=[{size:Buffer.byteLength(text),text:async()=>text}];await els['import-file'].listeners.change()},exported:()=>exported,filename:()=>context.document.body.children.at(-1)?.download,calendarFor:selected=>context.buildCalendar(selected),visible:()=>cards.filter(c=>!c.hidden),changeDay(day){els.day.value=day;els.day.listeners.change()},choose(f){const button=cards.find(c=>c.dataset.id===f.id).button;els.filmes.listeners.click({target:{closest:()=>button}})}};
 }
 (async()=>{
  const old=films.find(f=>f.date==='2026-10-17'&&f.legacyId===6);
@@ -196,5 +197,106 @@ function setup(storage={},search=''){
   assert.ok(empty.els.status.textContent.includes('Marque a estrela'));
   assert.ok(!empty.els.status.textContent.includes('deste dia'));
  }
+ // TXT exportado de verdade: todos os dias, filtros ativos e programas agrupados.
+ const imported=setup();
+ imported.choose(old);
+ await imported.importText(fullText);
+ const expectedIds=[...new Set([old.id,...selected.map(f=>f.id)])].sort();
+ assert.deepEqual(JSON.parse(imported.storage['mostra-sessoes-2026-v2']).sort(),expectedIds);
+ await imported.importText('\uFEFF'+fullText.replace(/\n/g,'\r\n'));
+ assert.deepEqual(JSON.parse(imported.storage['mostra-sessoes-2026-v2']).sort(),expectedIds);
+ assert.ok(imported.els.status.textContent.includes('0 favoritos adicionados'));
+ const dailySource=setup();dailySource.choose(old);dailySource.changeDay(old.date);dailySource.els.download.listeners.click();
+ const dailyText=await dailySource.exported().text();
+ const dailyImport=setup();await dailyImport.importText(dailyText);
+ assert.deepEqual(JSON.parse(dailyImport.storage['mostra-sessoes-2026-v2']),[old.id]);
+ const accentImport=setup();await accentImport.importText(dailyText.normalize('NFD').replace(/[\u0300-\u036f]/g,''));
+ assert.deepEqual(JSON.parse(accentImport.storage['mostra-sessoes-2026-v2']),[old.id]);
+ const beforeInvalid=imported.storage['mostra-sessoes-2026-v2'];
+ await imported.importText('qualquer texto');assert.ok(imported.els.status.textContent.includes('Não foi possível ler'));
+ assert.equal(imported.storage['mostra-sessoes-2026-v2'],beforeInvalid);
+ const mismatch=dailyText.replace(old.title,'Filme que não existe');
+ await imported.importText(mismatch);assert.ok(imported.els.status.textContent.includes('Nenhuma sessão'));
+ assert.equal(imported.storage['mostra-sessoes-2026-v2'],beforeInvalid);
+ await imported.importText(fullText.replace(selected[0].title,'Filme que não existe'));
+ assert.ok(imported.els.status.textContent.includes('1 entrada não identificada'));
+ // Sem data ou com sala/horário divergente, não adivinhar a sessão.
+ for(const invalid of [dailyText.replace(/.+ na Mostra — .+\n/,''),dailyText.replace(old.venue,'OUTRO CINEMA'),dailyText.replace(old.time,'00:01')]){
+  const app=setup();await app.importText(invalid);assert.equal(app.storage['mostra-sessoes-2026-v2'],'[]');
+ }
+ const ambiguous=setup();
+ vm.runInContext('films.push({...films.find(f=>f.id==='+JSON.stringify(old.id)+'),id:"duplicado"})',ambiguous.context);
+ await ambiguous.importText(dailyText);assert.ok(ambiguous.els.status.textContent.includes('Nenhuma sessão'));
+ const blockedImport=setup({},'',{writeError:true});await blockedImport.importText(dailyText);
+ assert.ok(blockedImport.els.status.textContent.includes('Não foi possível salvar'));
+ assert.equal(vm.runInContext('chosen.size',blockedImport.context),0);
+ const largeImport=setup();largeImport.els['import-file'].files=[{size:1000001,text:()=>{throw Error('não deveria ler')}}];
+ await largeImport.els['import-file'].listeners.change();assert.ok(largeImport.els.status.textContent.includes('grande demais'));
+ // Testar a página auxiliar real em uma origem antiga simulada, sem rede.
+ const bridgeHtml=fs.readFileSync(path.join(__dirname,'..','transferir-favoritos','index.html'),'utf8');
+ const bridgeCode=bridgeHtml.match(/<script>([\s\S]*?)<\/script>/)[1];
+ function runBridge(storage={},search='',options={}){
+  const els={status:new El(),return:new El()};let destination;
+  const context={URL,URLSearchParams,document:{getElementById:id=>els[id]},localStorage:{getItem(key){if(options.blocked)throw Error('blocked');return storage[key]??null}},window:{location:{origin:options.origin||'https://ecdyzone.github.io',search,replace:href=>{destination=href}}}};
+  vm.createContext(context);vm.runInContext(bridgeCode,context);return {destination,els};
+ }
+ const originalStorage={'mostra-sessoes-2026-v2':JSON.stringify([old.id,selected[0].id,'sessao-desconhecida'])};
+ const originalCopy=JSON.stringify(originalStorage);
+ const bridge=runBridge(originalStorage,'?dia=2026-10-24&visao=todos&destino=https://example.org');
+ const back=new URL(bridge.destination);
+ assert.equal(back.origin,'https://mostrasp.com.br');assert.equal(back.search,'?dia=2026-10-24&visao=todos');
+ assert.equal(JSON.stringify(originalStorage),originalCopy);
+ const recovered=setup({'mostra-sessoes-2026-v2':JSON.stringify([old.id])},'',{href:bridge.destination});
+ assert.ok(recovered.els.status.textContent.startsWith('Recuperação concluída'));
+ assert.ok(recovered.els.status.textContent.includes('1 entrada não identificada'));
+ assert.deepEqual(JSON.parse(recovered.storage['mostra-sessoes-2026-v2']).sort(),[...new Set([old.id,selected[0].id])].sort());
+ assert.equal(new URL(recovered.context.window.location.href).hash,'');
+ assert.equal(new URL(recovered.context.window.location.href).search,'?dia=2026-10-24&visao=todos');
+ assert.equal(recovered.storage['mostra-migracao-2026-v1'],'done');
+ const legacyBack=runBridge({'mostra-sabado-2026':'[6,99999]'});
+ const legacyRecovered=setup({},'',{href:legacyBack.destination});
+ assert.deepEqual(JSON.parse(legacyRecovered.storage['mostra-sessoes-2026-v2']),[old.id]);
+ assert.ok(legacyRecovered.els.status.textContent.includes('1 entrada não identificada'));
+ // A chave atual é autoritativa: não ressuscitar favoritos legados já removidos.
+ const removedLegacy=runBridge({'mostra-sessoes-2026-v2':'[]','mostra-sabado-2026':'[6]'});
+ const noFavorites=setup({},'',{href:removedLegacy.destination});
+ assert.ok(noFavorites.els.status.textContent.includes('Nenhum favorito'));
+ for(const options of [{blocked:true},{origin:'https://outro.example'}]){
+  const failed=setup({},'',{href:runBridge(originalStorage,'',options).destination});
+  assert.ok(failed.els.status.textContent.includes('Não foi possível ler'));assert.equal(failed.els['recover-retry'].hidden,false);
+ }
+ const corrupt=setup({},'',{href:runBridge({'mostra-sessoes-2026-v2':'{bad'}).destination});
+ assert.equal(corrupt.storage['mostra-migracao-2026-v1'],'failed');
+ for(const fragment of ['%xx',encodeURIComponent('{bad'),encodeURIComponent(JSON.stringify({version:2,ids:[],legacy:[]})),encodeURIComponent(JSON.stringify({version:1,ids:[{}],legacy:[]}))]){
+  const bad=setup({},'',{href:'https://mostrasp.com.br/#mostra-favoritos='+fragment});
+  assert.equal(bad.storage['mostra-migracao-2026-v1'],'failed');assert.ok(bad.els.status.textContent.includes('inválidos'));
+ }
+ const failedSave=setup({},'',{href:bridge.destination,writeError:true});
+ assert.ok(failedSave.els.status.textContent.includes('Não foi possível salvar'));
+ assert.ok(new URL(failedSave.context.window.location.href).hash.startsWith('#mostra-favoritos='));
+ assert.equal(vm.runInContext('chosen.size',failedSave.context),0);
+ // Configuração desligada, origens diferentes e acesso offline não navegam.
+ for(const href of ['https://mostrasp.com.br/','https://ecdyzone.github.io/mostra_cinema_sp_interativa/','file:///tmp/index.html']){
+  assert.equal(setup({},'',{href}).navigation(),undefined);
+ }
+ for(const href of ['https://ecdyzone.github.io/mostra_cinema_sp_interativa/','file:///tmp/index.html']){
+  assert.equal(setup({},'',{href,auto:true}).navigation(),undefined);
+ }
+ const auto=setup({},'',{href:'https://mostrasp.com.br/?dia=2026-10-24&visao=todos',auto:true});
+ assert.equal(auto.storage['mostra-migracao-2026-v1'],'pending');
+ assert.equal(auto.navigation(),'https://ecdyzone.github.io/transferir-favoritos/?dia=2026-10-24&visao=todos');
+ const interrupted=setup(auto.storage,'',{href:'https://mostrasp.com.br/',auto:true});
+ assert.equal(interrupted.navigation(),undefined);assert.equal(interrupted.els['recover-retry'].hidden,false);
+ interrupted.els['recover-retry'].listeners.click();assert.ok(interrupted.navigation());
+ for(const state of ['done','failed','pending'])assert.equal(setup({'mostra-migracao-2026-v1':state},'',{href:'https://mostrasp.com.br/',auto:true}).navigation(),undefined);
+ for(const options of [{readError:true},{writeError:true}])assert.equal(setup({},'',{...options,href:'https://mostrasp.com.br/',auto:true}).navigation(),undefined);
+ const roundTrip=setup({},'',{href:runBridge(originalStorage,new URL(auto.navigation()).search).destination,auto:true});
+ assert.equal(roundTrip.navigation(),undefined);assert.equal(roundTrip.storage['mostra-migracao-2026-v1'],'done');
+ const revisited=setup(roundTrip.storage,'',{href:roundTrip.context.window.location.href,auto:true});assert.equal(revisited.navigation(),undefined);
+ imported.els['import-txt'].listeners.click();assert.equal(imported.els['import-file'].clicked,true);
+ imported.els['import-menu'].open=true;let prevented=false;
+ imported.els['import-menu'].listeners.keydown({key:'Escape',preventDefault(){prevented=true}});
+ assert.ok(prevented);assert.equal(imported.els['import-menu'].open,false);assert.equal(imported.els['import-toggle'].focused,true);
+ console.log('Passou: TXT diário e completo, importação parcial, duplicatas, ambiguidades, acentos, falhas de armazenamento; página auxiliar, favoritos legados, retorno, recuperação única e desativação.');
  console.log('Passou: 15 dias, curadoria padrão e programação completa, seleção por URL, filtros, ordenação e favoritos nas duas visões; TXT e calendário por dia e completos; fuso, duração, virada de dia, programas e UTF-8.');
 })();

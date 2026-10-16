@@ -21,6 +21,7 @@ Guia independente para escolher sessões da 50ª Mostra de Cinema de São Paulo,
 - `programacao_por_dia/`: grades presenciais, com um bloco de **15 linhas por filme e sessão**. Preserve as linhas vazias; os scripts validam esse formato.
 - `cache/programacao/`: HTML original da Mostra. Preserve o cache: permite extração offline, comparação com as grades e recuperação dos endereços oficiais das fichas.
 - `scripts/`: ferramentas Python e verificação Node.js; sem dependências de terceiros.
+- `transferir-favoritos/index.html`: página auxiliar para publicar na raiz de outro repositório, em `https://ecdyzone.github.io/transferir-favoritos/`, sem domínio personalizado. Veja `docs/migracao-favoritos.md`.
 
 Requisitos documentados: Python 3.10+ e Node.js 18+.
 
@@ -59,6 +60,7 @@ O arquivo contém uma linha muito grande com `const films`. Evite imprimir essa 
 ## Comportamentos da interface a preservar
 
 - Favoritos são sessões específicas, persistidas em `localStorage`. Preserve IDs estáveis, `legacyId` e a migração dos favoritos da primeira versão de 17/10.
+- Importações por TXT ou transferência acrescentam sessões sem apagar escolhas existentes e só confirmam sucesso após persistir. A recuperação automática temporária é controlada por `AUTO_RECOVER_FAVORITES`; só ative após verificar a publicação da página auxiliar na origem antiga. A opção manual e a importação de TXT continuam disponíveis após desativar a automação.
 - `Minha lista do dia`, TXT e calendário incluem todos os favoritos daquele dia nas duas visualizações, inclusive os ocultos pela busca ou filtros.
 - `?dia=2026-10-24` seleciona uma data; `&visao=todos` abre a programação completa, inicialmente ordenada por horário.
 - Use o texto **Exportar para calendário**, acessível a pessoas sem conhecimento de ICS. Eventos usam horários de São Paulo e término estimado pela duração; mantenha a conversão de fuso, UTF-8, escape e quebra de linhas do formato ICS.

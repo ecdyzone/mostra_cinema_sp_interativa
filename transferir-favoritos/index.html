@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Recuperando favoritos · Dias de cinema</title>
+<style>
+body{margin:0;background:#f2f3ee;color:#1a2927;font:18px/1.6 system-ui,sans-serif}main{max-width:640px;margin:12vh auto;padding:24px}h1{font-size:32px;line-height:1.2}a{color:#174d42}a:focus-visible{outline:3px solid #b63c27;outline-offset:4px}
+</style>
+</head>
+<body><main>
+<h1>Recuperando seus favoritos</h1>
+<p id="status" role="status">Verificando as escolhas salvas neste navegador…</p>
+<p><a id="return" href="https://mostrasp.com.br/">Voltar ao guia</a></p>
+<noscript><p>Ative o JavaScript para recuperar suas escolhas. Use o mesmo navegador e perfil em que marcou as estrelas.</p></noscript>
+</main>
+<script>
+const destination=new URL('https://mostrasp.com.br/');
+const params=new URLSearchParams(window.location.search);
+for(const name of ['dia','visao'])if(params.has(name))destination.searchParams.set(name,params.get(name));
+const payload={version:1,ids:[],legacy:[]};
+try{
+ if(window.location.origin!=='https://ecdyzone.github.io')throw new Error('origin');
+ const current=localStorage.getItem('mostra-sessoes-2026-v2');
+ if(current!==null){
+  payload.ids=JSON.parse(current);
+  if(!Array.isArray(payload.ids)||payload.ids.length>5000||!payload.ids.every(id=>typeof id==='string'&&id.length<=500))throw new Error('format');
+ }else{
+  payload.legacy=JSON.parse(localStorage.getItem('mostra-sabado-2026')||'[]');
+  if(!Array.isArray(payload.legacy)||payload.legacy.length>5000||!payload.legacy.every(id=>Number.isSafeInteger(id)))throw new Error('format');
+ }
+}catch{
+ payload.ids=[];payload.legacy=[];payload.error='storage';
+}
+destination.hash='mostra-favoritos='+encodeURIComponent(JSON.stringify(payload));
+if(destination.hash.length>1000000){
+ destination.hash='mostra-favoritos='+encodeURIComponent(JSON.stringify({version:1,ids:[],legacy:[],error:'size'}));
+}
+document.getElementById('return').href=destination.href;
+document.getElementById('status').textContent=payload.error?'Não foi possível ler os favoritos. Voltando ao guia com orientações…':'Verificação concluída. Voltando ao guia…';
+// Substituir esta página no histórico evita repetir a transferência com o botão Voltar.
+window.location.replace(destination.href);
+</script>
+</body>
+</html>

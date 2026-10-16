@@ -18,6 +18,8 @@ Abra [index.html](index.html) diretamente no navegador ou acesse o site publicad
 
 Os favoritos ficam no navegador. As escolhas da primeira versão de 17/10 são migradas automaticamente quando o navegador e o endereço do site são os mesmos.
 
+No menu **Importar favoritos**, escolha **Importar arquivo TXT** para restaurar uma lista diária ou completa anteriormente baixada pelo site. A importação acrescenta sessões às estrelas existentes e informa entradas que não conseguiu identificar. O arquivo é lido no próprio navegador. **Recuperar do endereço antigo** permite transferir escolhas salvas em `ecdyzone.github.io` para `mostrasp.com.br`, usando o mesmo navegador e perfil, depois de publicada a página auxiliar.
+
 A página explica o recorte da curadoria, apresenta as [quatro fontes editoriais](referencias/urls.md) e informa a abertura da compra online quatro dias antes da sessão, às 9h, com link para as regras oficiais da Mostra.
 
 ## Estrutura do repositório
@@ -38,7 +40,8 @@ Esta pasta é a raiz do repositório. Todos os comandos abaixo partem dela.
 │   └── urls.md                  # Quatro matérias de origem
 ├── cache/
 │   └── programacao/             # HTML original da Mostra para processamento local
-└── scripts/                     # Coleta, sincronização, geração e verificações
+├── scripts/                     # Coleta, sincronização, geração e verificações
+└── transferir-favoritos/         # Página auxiliar para publicar em outro repositório
 ```
 
 O cache original é mantido no repositório para permitir reproduzir a extração e recuperar os endereços oficiais das fichas sem novos downloads. Arquivos temporários de Python e cópias de editor são ignorados pelo Git.
@@ -95,3 +98,7 @@ A verificação Node.js exercita a lógica da interface e as exportações diár
 ## Publicação
 
 O GitHub Pages serve o [index.html](index.html) da raiz deste repositório. As alterações dos scripts são locais; para publicá-las, envie os arquivos atualizados ao repositório e mantenha o Pages configurado para a raiz da branch de publicação. Não há etapa de build nem pasta `github/` adicional dentro do projeto.
+
+Para publicar a página auxiliar e ativar/desativar a recuperação automática temporária, siga [Migração de favoritos](docs/migracao-favoritos.md). A automação vem desativada até a publicação e verificação dessa página.
+
+A verificação Node.js cobre também importação de TXT diário e completo, duplicatas, entradas ambíguas, importação parcial e falhas de armazenamento. Executa o JavaScript real da página auxiliar em uma origem simulada para verificar o retorno, favoritos legados e execução única da recuperação automática.
