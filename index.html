@@ -18057,10 +18057,10 @@ $('calendar').addEventListener('click',()=>exportCalendar());
 $('calendar-all').addEventListener('click',()=>exportCalendar(true));
 $('download').addEventListener('click',()=>exportList());
 $('download-all').addEventListener('click',()=>exportList(true));
-// Ativar somente depois de publicar e verificar a página auxiliar; desligar após a migração.
+// Página auxiliar verificada; ativar após validar o HTTPS de mostrasp.com.br.
 const AUTO_RECOVER_FAVORITES = false;
 const RECOVERY_ORIGIN = 'https://mostrasp.com.br';
-const RECOVERY_URL = 'https://ecdyzone.github.io/transferir-favoritos/';
+const RECOVERY_URL = 'https://ecdyzone.github.io/mostra-transferir-favoritos/';
 const RECOVERY_KEY = 'mostra-migracao-2026-v1';
 const RECOVERY_FRAGMENT = '#mostra-favoritos=';
 const MAX_TRANSFER_LENGTH = 1000000;

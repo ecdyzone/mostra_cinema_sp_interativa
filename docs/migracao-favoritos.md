@@ -4,15 +4,17 @@ O navegador mantém favoritos separados por origem. O site em `https://mostrasp.
 
 ## Publicar a página auxiliar
 
-1. Na conta **ecdyzone**, criar um repositório chamado **transferir-favoritos**.
+1. Na conta **ecdyzone**, usar o repositório **mostra-transferir-favoritos** (já publicado).
 2. Copiar o conteúdo de [transferir-favoritos/index.html](../transferir-favoritos/index.html) para um arquivo `index.html` na raiz desse novo repositório. Não copiar o `CNAME` do site principal.
 3. Publicar pelo GitHub Pages, usando a raiz da branch de publicação.
-4. Manter **Custom domain vazio** nesse repositório. A página precisa abrir em `https://ecdyzone.github.io/transferir-favoritos/`. Se houver redirecionamento herdado de um site de usuário, resolver isso antes de ativar a migração; servir a página no domínio novo não permite ler os dados antigos.
+4. Manter **Custom domain vazio** nesse repositório. A página precisa abrir em `https://ecdyzone.github.io/mostra-transferir-favoritos/`. Se houver redirecionamento herdado de um site de usuário, resolver isso antes de ativar a migração; servir a página no domínio novo não permite ler os dados antigos.
 5. Publicar o site principal atualizado em `https://mostrasp.com.br` e testar a opção **Importar favoritos → Recuperar do endereço antigo** com o mesmo navegador e perfil usados no endereço anterior.
 
 A auxiliar verifica a origem antes de ler os dados. Publicá-la apenas como subpasta do site com domínio próprio não atende ao requisito: é necessário que responda na origem `https://ecdyzone.github.io`.
 
-## Ativar a recuperação automática
+## Configuração da recuperação automática
+
+A página auxiliar foi verificada em 16/10/2026: HTTP 200, sem redirecionamento para outro domínio, com conteúdo idêntico à cópia deste projeto. O código local do repositório independente está em `/home/camu/code/mostra-transferir-favoritos`. A verificação de `https://mostrasp.com.br/` encontrou um certificado que não corresponde ao domínio (curl, erro 60). A recuperação automática permanece desativada até o HTTPS do destino estar válido.
 
 No JavaScript de `index.html` do site principal, alterar:
 
@@ -26,7 +28,7 @@ para:
 const AUTO_RECOVER_FAVORITES = true;
 ```
 
-Publicar a alteração depois de verificar a página auxiliar. O fluxo automático só roda em `https://mostrasp.com.br`, uma vez por navegador e perfil. Abrir o HTML localmente ou usar o endereço antigo não inicia esse fluxo.
+Publicar a alteração depois de verificar a página auxiliar e confirmar que `https://mostrasp.com.br/` abre com certificado válido. O fluxo automático só roda em `https://mostrasp.com.br`, uma vez por navegador e perfil. Abrir o HTML localmente ou usar o endereço antigo não inicia esse fluxo.
 
 A chave `mostra-migracao-2026-v1` registra a tentativa antes de navegar. Um retorno bem-sucedido marca `done`. Tentativas interrompidas ou com erro oferecem nova tentativa manual, sem repetir redirecionamentos automaticamente. Limpar os dados do site permite uma nova tentativa automática. Se o armazenamento estiver bloqueado, não iniciar navegação automática.
 

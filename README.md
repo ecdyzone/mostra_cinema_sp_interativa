@@ -99,6 +99,6 @@ A verificação Node.js exercita a lógica da interface e as exportações diár
 
 O GitHub Pages serve o [index.html](index.html) da raiz deste repositório. As alterações dos scripts são locais; para publicá-las, envie os arquivos atualizados ao repositório e mantenha o Pages configurado para a raiz da branch de publicação. Não há etapa de build nem pasta `github/` adicional dentro do projeto.
 
-Para publicar a página auxiliar e ativar/desativar a recuperação automática temporária, siga [Migração de favoritos](docs/migracao-favoritos.md). A automação vem desativada até a publicação e verificação dessa página.
+Para publicar a página auxiliar e ativar/desativar a recuperação automática temporária, siga [Migração de favoritos](docs/migracao-favoritos.md). A página auxiliar já foi publicada e verificada; a automação permanece desativada até o HTTPS de `mostrasp.com.br` estar válido.
 
 A verificação Node.js cobre também importação de TXT diário e completo, duplicatas, entradas ambíguas, importação parcial e falhas de armazenamento. Executa o JavaScript real da página auxiliar em uma origem simulada para verificar o retorno, favoritos legados e execução única da recuperação automática.

@@ -19,7 +19,7 @@ function setup(storage={},search='',options={}){
  let exported;
  const url=new URL(options.href||'https://example.com/'+search);let navigation;
  const context={document:{addEventListener(){},getElementById:id=>els[id],querySelectorAll:()=>cards,createElement:()=>new El(),body:new El()},localStorage:{getItem:key=>{if(options.readError)throw Error('blocked');return storage[key]??null},setItem:(key,value)=>{if(options.writeError)throw Error('blocked');storage[key]=value}},Blob,TextEncoder,URL:Object.assign(URL,{createObjectURL:blob=>{exported=blob;return 'blob:test'},revokeObjectURL(){}}),URLSearchParams,setTimeout:fn=>fn(),window:{location:{search:url.search,href:url.href,origin:url.origin,assign:href=>{navigation=href}},history:{replaceState(_state,_title,href){context.window.location.href=String(href)}},print(){}}};
- vm.createContext(context);vm.runInContext(options.auto?code.replace('const AUTO_RECOVER_FAVORITES = false;','const AUTO_RECOVER_FAVORITES = true;'):code,context);
+ vm.createContext(context);vm.runInContext(options.auto===undefined?code:code.replace(/const AUTO_RECOVER_FAVORITES = (?:true|false);/,'const AUTO_RECOVER_FAVORITES = '+options.auto+';'),context);
  return {els,cards,storage,context,navigation:()=>navigation,async importText(text){els['import-file'].files=[{size:Buffer.byteLength(text),text:async()=>text}];await els['import-file'].listeners.change()},exported:()=>exported,filename:()=>context.document.body.children.at(-1)?.download,calendarFor:selected=>context.buildCalendar(selected),visible:()=>cards.filter(c=>!c.hidden),changeDay(day){els.day.value=day;els.day.listeners.change()},choose(f){const button=cards.find(c=>c.dataset.id===f.id).button;els.filmes.listeners.click({target:{closest:()=>button}})}};
 }
 (async()=>{
@@ -277,14 +277,14 @@ function setup(storage={},search='',options={}){
  assert.equal(vm.runInContext('chosen.size',failedSave.context),0);
  // Configuração desligada, origens diferentes e acesso offline não navegam.
  for(const href of ['https://mostrasp.com.br/','https://ecdyzone.github.io/mostra_cinema_sp_interativa/','file:///tmp/index.html']){
-  assert.equal(setup({},'',{href}).navigation(),undefined);
+  assert.equal(setup({},'',{href,auto:false}).navigation(),undefined);
  }
  for(const href of ['https://ecdyzone.github.io/mostra_cinema_sp_interativa/','file:///tmp/index.html']){
   assert.equal(setup({},'',{href,auto:true}).navigation(),undefined);
  }
  const auto=setup({},'',{href:'https://mostrasp.com.br/?dia=2026-10-24&visao=todos',auto:true});
  assert.equal(auto.storage['mostra-migracao-2026-v1'],'pending');
- assert.equal(auto.navigation(),'https://ecdyzone.github.io/transferir-favoritos/?dia=2026-10-24&visao=todos');
+ assert.equal(auto.navigation(),'https://ecdyzone.github.io/mostra-transferir-favoritos/?dia=2026-10-24&visao=todos');
  const interrupted=setup(auto.storage,'',{href:'https://mostrasp.com.br/',auto:true});
  assert.equal(interrupted.navigation(),undefined);assert.equal(interrupted.els['recover-retry'].hidden,false);
  interrupted.els['recover-retry'].listeners.click();assert.ok(interrupted.navigation());

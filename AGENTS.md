@@ -21,7 +21,7 @@ Guia independente para escolher sessões da 50ª Mostra de Cinema de São Paulo,
 - `programacao_por_dia/`: grades presenciais, com um bloco de **15 linhas por filme e sessão**. Preserve as linhas vazias; os scripts validam esse formato.
 - `cache/programacao/`: HTML original da Mostra. Preserve o cache: permite extração offline, comparação com as grades e recuperação dos endereços oficiais das fichas.
 - `scripts/`: ferramentas Python e verificação Node.js; sem dependências de terceiros.
-- `transferir-favoritos/index.html`: página auxiliar para publicar na raiz de outro repositório, em `https://ecdyzone.github.io/transferir-favoritos/`, sem domínio personalizado. Veja `docs/migracao-favoritos.md`.
+- `transferir-favoritos/index.html`: cópia da página auxiliar publicada na raiz do repositório `ecdyzone/mostra-transferir-favoritos`, em `https://ecdyzone.github.io/mostra-transferir-favoritos/`, sem domínio personalizado. Veja `docs/migracao-favoritos.md`.
 
 Requisitos documentados: Python 3.10+ e Node.js 18+.
 
